@@ -1,0 +1,750 @@
+{
+  "_meta": {
+    "code": "fr",
+    "locale": "fr_CA",
+    "hreflang": "fr-CA",
+    "label": "FR",
+    "name": "Français"
+  },
+  "routes": {
+    "home": "",
+    "about": "a-propos",
+    "add_ons": "modules-complementaires",
+    "reviews": "avis",
+    "contact": "nous-joindre",
+    "blog": "blog",
+    "news": "nouvelles",
+    "thank_you": "merci"
+  },
+  "common": {
+    "skip": "Passer au contenu",
+    "menu": "Menu",
+    "close_menu": "Fermer le menu",
+    "language": "Langue",
+    "main_nav": "Principal",
+    "book_demo": "Réserver une démo",
+    "read_more": "Lire la suite",
+    "home": "Accueil",
+    "search": "Rechercher",
+    "search_label": "Rechercher dans le blogue",
+    "search_placeholder": "Rechercher des articles",
+    "opens_new_tab": "(s’ouvre dans un nouvel onglet)",
+    "months": [
+      "janv.",
+      "févr.",
+      "mars",
+      "avr.",
+      "mai",
+      "juin",
+      "juil.",
+      "août",
+      "sept.",
+      "oct.",
+      "nov.",
+      "déc."
+    ],
+    "date_format": "{d} {M} {Y}",
+    "call": "Appeler le"
+  },
+  "nav": {
+    "platform": "Plateforme",
+    "ai": "FranFast AI",
+    "headless": "Fonctionnement",
+    "add_ons": "Modules complémentaires",
+    "customers": "Clients",
+    "reviews": "Avis",
+    "blog": "Blogue",
+    "news": "Nouvelles",
+    "about": "À propos",
+    "contact": "Nous joindre",
+    "expand": "Étendre"
+  },
+  "footer": {
+    "tagline": "La plateforme de franchise native IA, bâtie sur Salesforce Platform par Fast Cloud Consulting.",
+    "col_platform": "Plateforme",
+    "col_company": "Entreprise",
+    "col_legal": "Juridique",
+    "col_contact": "Parlez-nous",
+    "email_label": "Courriel",
+    "social_label": "FranFast sur les réseaux sociaux",
+    "trust_title": "SOC 2 Type II · Sécurité",
+    "trust_text": "Audit indépendant. Demandez le rapport dans notre Trust Center.",
+    "trust_cta": "Visiter le Trust Center",
+    "badges_label": "Certifications et adhésions",
+    "trademark": "FRANFAST est une marque déposée aux États-Unis. Copyright © %1$s %2$s",
+    "salesforce_notice": "Salesforce, AppExchange, Agentforce et Slack sont des marques de commerce de Salesforce, Inc.",
+    "built_on": "Bâti sur Salesforce Platform."
+  },
+  "newsletter": {
+    "eyebrow": "Infolettre",
+    "title": "Les nouvelles des opérations de franchise et de l’IA, et plus encore, dans votre boîte de réception",
+    "text": "Des idées pratiques pour les marques de franchise, de l’équipe FranFast. Désabonnez-vous en tout temps.",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "email": "Courriel professionnel",
+    "submit": "S’abonner",
+    "consent": "En vous abonnant, vous acceptez notre %s.",
+    "success": "Merci de votre abonnement. Vous êtes sur la liste.",
+    "error": "Nous n’avons pas pu vous abonner. Veuillez réessayer dans un instant.",
+    "invalid_email": "Entrez une adresse courriel valide.",
+    "invalid_name": "Entrez votre prénom.",
+    "invalid_last_name": "Entrez votre nom."
+  },
+  "legal": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "cookies": "Politique relative aux témoins",
+    "caup": "Politique d’utilisation acceptable",
+    "subprocessor": "Liste des sous-traitants",
+    "dpa": "Entente sur le traitement des données",
+    "refund": "Politique d’annulation et de remboursement"
+  },
+  "phones": {
+    "US": "États-Unis",
+    "UK": "Royaume-Uni",
+    "MX": "Mexique",
+    "CR": "Costa Rica",
+    "CO": "Colombie",
+    "OTHER": "Autres pays"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube",
+    "facebook": "Facebook"
+  },
+  "badges": {
+    "salesforce": "Partenaire Salesforce",
+    "soc2": "SOC 2 Type II",
+    "claude": "Partenaire certifié Claude",
+    "ifa": "Membre de l’IFA"
+  },
+  "seo": {
+    "site_name": "FranFast",
+    "separator": "|",
+    "paged": "Page %d",
+    "category": "Articles : %s",
+    "category_description": "Articles FranFast sur %s : développement de franchise, ouvertures, opérations et redevances.",
+    "tag": "Articles avec l’étiquette « %s »",
+    "search": "Résultats de recherche pour « %s »",
+    "not_found": "Page introuvable",
+    "home": {
+      "title": "FranFast | La plateforme de franchise native IA",
+      "description": "FranFast est la plateforme de franchise native IA bâtie sur Salesforce. Gérez le développement, les ouvertures, les opérations et les redevances avec vos équipes et vos agents IA, de partout."
+    },
+    "about": {
+      "title": "À propos de FranFast | Fast Cloud Consulting",
+      "description": "FranFast est conçue par Fast Cloud Consulting, partenaire Salesforce qui accompagne les marques de franchise depuis 2006 dans plus de 30 pays."
+    },
+    "add_ons": {
+      "title": "Modules complémentaires | FranFast",
+      "description": "Étendez FranFast avec 24 modules complémentaires, dont Claude, Tableau, DocuSign, Stripe, Toast et Zoom, pour les paiements, les communications, les données, l’IA et l’intégration."
+    },
+    "reviews": {
+      "title": "Avis clients | FranFast",
+      "description": "Découvrez comment des marques de franchise gèrent leur réseau avec FranFast. Note de 5,0 / 5 sur Salesforce AppExchange."
+    },
+    "contact": {
+      "title": "Réserver une démo | FranFast",
+      "description": "Réservez une présentation de FranFast de 30 minutes avec votre marque, vos processus et vos questions."
+    },
+    "blog": {
+      "title": "Blogue | FranFast",
+      "description": "Idées et guides pratiques sur le développement de franchise, les ouvertures, les opérations, les redevances et l’IA pour les marques de franchise."
+    },
+    "news": {
+      "title": "Nouvelles | FranFast",
+      "description": "Nouvelles produit, événements et annonces de FranFast."
+    },
+    "thank_you": {
+      "title": "Merci | FranFast",
+      "description": "Nous avons reçu votre demande. Un expert FranFast communiquera avec vous sous peu."
+    }
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "blog": "Blogue"
+  },
+  "not_found": {
+    "eyebrow": "Erreur 404",
+    "title": "Nous n’avons pas trouvé cette page",
+    "text": "La page a peut-être été déplacée ou n’existe plus. Faites une recherche ou retournez à l’accueil.",
+    "cta": "Retour à l’accueil"
+  },
+  "placeholder": {
+    "title": "Prévu dans la prochaine phase",
+    "text": "Ce gabarit fait partie du plan de construction du thème FranFast."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Plateforme de franchise native IA",
+      "title_1": "Conçue autour de votre marque.",
+      "title_2": "Pilotée par l’IA.",
+      "lead": "FranFast est la plateforme de franchise native IA qui s’adapte à la façon dont votre marque fonctionne vraiment, pour que vos équipes et vos agents IA gèrent le développement, les ouvertures, les opérations et les redevances, de partout.",
+      "cta_primary": "Réserver une démo",
+      "cta_secondary": "Voir comment ça fonctionne",
+      "proof": "Bâti sur Salesforce Platform · SOC 2 Type II"
+    },
+    "agent": {
+      "name": "FranFast AI",
+      "working": "Agent au travail",
+      "done": "Terminé",
+      "asked_by": "Demandé par : %s",
+      "hours_label": "Heures récupérées ce mois-ci",
+      "dot_label": "Voir l’exemple %1$d de %2$d",
+      "dots_label": "Exemples de l’agent",
+      "scenarios": [
+        {
+          "persona": "VP Développement de franchise",
+          "prompt": "Quels candidats arrivent au Discovery Day, et lesquels n’ont pas encore d’accusé de réception du FDD?",
+          "steps": [
+            "Candidats inscrits au Discovery Day trouvés",
+            "Accusés de réception du FDD vérifiés",
+            "Candidats sans accusé de réception signalés",
+            "Tâches de suivi créées pour leurs responsables"
+          ]
+        },
+        {
+          "persona": "VP Immobilier et construction",
+          "prompt": "Quelles tâches de construction arrivent à échéance cette semaine dans les nouvelles ouvertures?",
+          "steps": [
+            "Ouvertures en construction passées en revue",
+            "Tâches dues cette semaine extraites",
+            "Ouvertures en retard signalées",
+            "Chaque responsable de projet avisé"
+          ]
+        },
+        {
+          "persona": "VP Opérations",
+          "prompt": "Quels établissements doivent recevoir une visite sur place ce mois-ci?",
+          "steps": [
+            "Date de la dernière visite vérifiée par établissement",
+            "Règles de fréquence de visite appliquées",
+            "Établissements à visiter ce mois-ci listés",
+            "Calendrier de visites préparé pour les conseillers terrain"
+          ]
+        },
+        {
+          "persona": "Directeur de la formation",
+          "prompt": "Quels nouveaux franchisés ne sont pas encore inscrits à la formation initiale?",
+          "steps": [
+            "Franchisés en intégration trouvés",
+            "Inscriptions à la formation comparées",
+            "Franchisés non inscrits listés",
+            "Rappels préparés pour votre révision"
+          ]
+        },
+        {
+          "persona": "Directeur du soutien",
+          "prompt": "Que demandent le plus les franchisés cette semaine, et qu’est-ce qui se trouve déjà dans le manuel d’exploitation?",
+          "steps": [
+            "Demandes de soutien de la semaine regroupées",
+            "Base de connaissances consultée",
+            "Réponses du manuel d’exploitation associées",
+            "Nouveaux articles suggérés pour les lacunes"
+          ]
+        },
+        {
+          "persona": "PDG",
+          "prompt": "Quelles sont mes franchises les plus performantes en ventes ce trimestre?",
+          "steps": [
+            "Ventes déclarées extraites par établissement",
+            "Comparaison avec le trimestre précédent",
+            "Meilleurs établissements classés par région",
+            "Sommaire préparé pour la direction"
+          ]
+        },
+        {
+          "persona": "Chef des finances",
+          "prompt": "Prépare le calcul des redevances de septembre et signale tout établissement à vérifier.",
+          "steps": [
+            "Ventes déclarées recueillies par établissement",
+            "Redevances et fonds publicitaire calculés",
+            "Retards de paiement et montants inhabituels vérifiés",
+            "Établissements à vérifier signalés"
+          ]
+        },
+        {
+          "persona": "Chef du marketing",
+          "prompt": "Quelles sources de prospects ont généré le plus de candidats qualifiés ce trimestre?",
+          "steps": [
+            "Candidats regroupés par source",
+            "Filtrés par étape de qualification",
+            "Sources classées par candidats qualifiés",
+            "Résultats résumés pour l’équipe marketing"
+          ]
+        },
+        {
+          "persona": "PDG",
+          "prompt": "Quels contrats de franchise arrivent à renouvellement ce trimestre?",
+          "steps": [
+            "Dates d’échéance des contrats vérifiées",
+            "Contrats à renouveler ce trimestre listés",
+            "Sommaire de performance ajouté pour chaque établissement",
+            "Tâches de renouvellement créées pour chaque responsable"
+          ]
+        }
+      ]
+    },
+    "logos": {
+      "label": "Ils font confiance à FranFast"
+    },
+    "why": {
+      "eyebrow": "Pourquoi les marques changent",
+      "title": "Votre réseau a dépassé les tableurs depuis longtemps",
+      "lead": "Les candidats sont dans un outil, les ouvertures dans un tableur, les audits dans les courriels et les redevances en comptabilité. Chaque rapport oblige à ressaisir les données, et personne ne voit l’ensemble du réseau.",
+      "cta": "Voyez ce que la fragmentation vous coûte",
+      "pains": [
+        {
+          "title": "Double saisie",
+          "text": "Les mêmes données entrées dans des systèmes déconnectés, encore et encore."
+        },
+        {
+          "title": "Des ouvertures qui glissent",
+          "text": "Des retards que personne ne remarque avant que la date d’ouverture recule."
+        },
+        {
+          "title": "Des problèmes de redevances découverts trop tard",
+          "text": "Les retards de paiement et les montants inhabituels apparaissent après l’envoi des factures."
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "La plateforme de base",
+      "title": "Un seul système pour tout le cycle de vie de la franchise",
+      "lead": "Six modules, un seul registre de votre réseau. Chaque module peut être opéré par des agents IA.",
+      "modules": [
+        {
+          "icon": "development",
+          "title": "Développement de franchise",
+          "text": "De la première demande au contrat signé, avec chaque candidat, territoire, FDD et Discovery Day dans un seul pipeline."
+        },
+        {
+          "icon": "opening",
+          "title": "Ouverture de nouveaux établissements",
+          "text": "Chaque ouverture sur un seul échéancier : site, construction, permis, embauche et lancement, avec responsables et dates."
+        },
+        {
+          "icon": "operations",
+          "title": "Opérations et conformité",
+          "text": "Visites terrain, audits de marque et mesures correctives menées à terme, dans chaque établissement."
+        },
+        {
+          "icon": "portal",
+          "title": "Portail et CRM des franchisés",
+          "text": "Un seul endroit pour les franchisés : un manuel d’exploitation consultable, la formation, les demandes de soutien et les annonces, dans leur langue.",
+          "note": "Options : CRM des franchisés · Gestion de l’apprentissage (LMS)"
+        },
+        {
+          "icon": "royalty",
+          "title": "Gestion des redevances",
+          "text": "Calcul des redevances et du fonds publicitaire à partir des ventes déclarées, avec retards de paiement et anomalies signalés avant qu’ils vous coûtent."
+        },
+        {
+          "icon": "ai",
+          "title": "FranFast AI",
+          "text": "Des agents qui travaillent dans tous les modules. Utilisez Agentforce, ou connectez Claude et d’autres modèles par MCP et CLI.",
+          "highlight": true
+        }
+      ]
+    },
+    "headless": {
+      "eyebrow": "La franchise headless",
+      "title": "Vos équipes travaillent là où elles travaillent déjà. Les agents font le reste.",
+      "lead": "FranFast sépare l’interface du travail. Votre équipe pose ses questions dans Slack, Claude, sur mobile ou dans le Portail et CRM des franchisés; les agents exécutent dans la plateforme; un seul registre garde le réseau synchronisé.",
+      "slack_title": "Slack inclus",
+      "slack_lead": "Chaque org FranFast inclut le forfait gratuit de Slack,",
+      "slack_text": "pour que votre équipe reçoive les alertes et mises à jour de FranFast là où elle discute déjà, dès le premier jour. Passez à un forfait Slack payant pour l’historique complet et l’IA dans Slack.",
+      "layers": [
+        {
+          "style": "neutral",
+          "title": "Interaction",
+          "sub": "Là où les gens travaillent",
+          "items": [
+            "Slack",
+            "Claude",
+            "Mobile",
+            "Portail et CRM des franchisés"
+          ]
+        },
+        {
+          "style": "agency",
+          "title": "Agents",
+          "sub": "Des agents qui exécutent",
+          "items": [
+            "Agentforce",
+            "Claude par MCP / CLI"
+          ]
+        },
+        {
+          "style": "work",
+          "title": "Travail",
+          "sub": "Modules de base",
+          "items": [
+            "Développement",
+            "Ouvertures",
+            "Opérations",
+            "Portail et CRM des franchisés",
+            "Redevances"
+          ]
+        },
+        {
+          "style": "neutral",
+          "title": "Registre",
+          "sub": "Une seule source de vérité",
+          "items": [
+            "Données du réseau",
+            "Bâti sur Salesforce Platform"
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "eyebrow": "FranFast AI",
+      "title": "Des agents qui exécutent, pas seulement qui répondent",
+      "cards": [
+        {
+          "label": "Intelligence des redevances",
+          "text": "Repérez les tendances par établissement, région ou marque, et signalez les retards de paiement et les montants inhabituels."
+        },
+        {
+          "label": "Des ouvertures dans les temps",
+          "text": "Voyez quelles ouvertures prennent du retard et créez les tâches de suivi pour les bons responsables."
+        },
+        {
+          "label": "Soutien aux franchisés",
+          "text": "Répondez aux questions courantes des franchisés à partir de votre propre base de connaissances, dans leur langue."
+        }
+      ],
+      "video_title": "Demandez à FranFast",
+      "video_text": "Un chef de l’exploitation demande dans Slack quelles ouvertures sont en retard et quelles redevances sont en souffrance ou inhabituelles. L’agent répond et crée les tâches.",
+      "video_play": "Lire la vidéo"
+    },
+    "proof": {
+      "title": "Des marques qui grandissent avec FranFast",
+      "rating": "5,0 / 5",
+      "rating_text": "Avis sur AppExchange",
+      "cta": "Lire les témoignages clients",
+      "review_badge": "★★★★★ Avis AppExchange",
+      "stories": [
+        {
+          "brand": "Dave's Hot Chicken",
+          "stat": "950+",
+          "stat_label": "engagements de franchise en 4 ans",
+          "quote": "Je n’utiliserai jamais un autre logiciel en développement de franchise.",
+          "author": "Shannon Swenson, VP Franchise Development"
+        },
+        {
+          "brand": "bb.q Chicken",
+          "badge": true,
+          "quote": "L’interface est intuitive et facile à utiliser, même pour ceux qui ne sont pas à l’aise avec la technologie.",
+          "author": "Alicia Jang, Corp Strategy"
+        },
+        {
+          "brand": "Senior Care Authority",
+          "badge": true,
+          "quote": "…transformer mes tableurs Excel, mes captures d’écran et mes documents exactement en la fonctionnalité dont j’ai besoin est tout simplement indispensable.",
+          "author": "Lorrie Siegwarth, Onboarding and Training Specialist"
+        }
+      ]
+    },
+    "segments": {
+      "title": "Conçue pour les réseaux de toutes tailles",
+      "items": [
+        {
+          "title": "Grandes entreprises",
+          "text": "Une plateforme d’entreprise, ouverte à vos propres agents, avec des contrôles de niveau corporatif.",
+          "cta": "Parler à un architecte"
+        },
+        {
+          "title": "Réseaux en croissance",
+          "text": "Remplacez les tableurs et les outils déconnectés par une seule plateforme et l’IA dès le premier jour.",
+          "cta": "Voyez ce que la fragmentation vous coûte",
+          "featured": true
+        },
+        {
+          "title": "Marques émergentes",
+          "text": "Les meilleures pratiques de franchise, prêtes à l’emploi, pour croître sur de bonnes bases dès le départ.",
+          "cta": "Réserver une démo"
+        }
+      ]
+    },
+    "expand": {
+      "eyebrow": "Étendre FranFast",
+      "title": "Ajoutez ce dont votre réseau a besoin, quand il en a besoin",
+      "lead": "Modules complémentaires optionnels, offerts sous licence séparée de la plateforme de base.",
+      "cta": "En savoir plus",
+      "items": [
+        {
+          "title": "Tableau Next",
+          "text": "Intelligence territoriale et analytique d’affaires"
+        },
+        {
+          "title": "Data 360",
+          "text": "Données unifiées : PDV, applications et systèmes dans une vue unique de chaque client et franchisé"
+        },
+        {
+          "title": "Marketing Cloud Next",
+          "text": "Parcours marketing personnalisés pour les clients, les franchisés et les candidats"
+        },
+        {
+          "title": "Salesforce Personalization",
+          "text": "Contenus et offres adaptés par l’IA en temps réel sur votre site Web. Nécessite Data 360"
+        },
+        {
+          "title": "Intégration Toast",
+          "text": "Les ventes Toast alimentent directement la gestion des redevances · Partenaire officiel Toast"
+        },
+        {
+          "title": "Intégration QuickBooks",
+          "text": "Rapports de redevances et santé financière des franchisés"
+        },
+        {
+          "title": "Intégration Stripe",
+          "text": "Perception automatisée des redevances"
+        },
+        {
+          "title": "Intégration DocuSign",
+          "text": "Signatures électroniques et gestion des contrats de franchise"
+        }
+      ]
+    },
+    "enterprise": {
+      "eyebrow": "Pour les réseaux d’entreprise",
+      "title": "Le poste de commande des exploitants multimarques",
+      "lead": "Une seule vue sur les marques, les régions et les établissements, avec des agents qui repèrent ce qui demande votre attention.",
+      "cta": "Parler à notre équipe Entreprise",
+      "stats": [
+        {
+          "label": "Établissements",
+          "value": "143"
+        },
+        {
+          "label": "Ouvertures en cours",
+          "value": "26"
+        },
+        {
+          "label": "Mesures d’audit ouvertes",
+          "value": "17"
+        },
+        {
+          "label": "Constats des agents",
+          "value": "8",
+          "live": true
+        }
+      ]
+    },
+    "implementation": {
+      "eyebrow": "Mise en œuvre",
+      "title": "En production en quelques semaines, mesurée dès le premier jour",
+      "lead": "Mise en production dès 2 semaines.* L’IA et FranFast Launchpad accélèrent la configuration et la migration des données, et nous mesurons l’impact par rapport à votre propre point de référence : la valeur est démontrée, pas promise.",
+      "steps": [
+        {
+          "title": "Mesurer votre point de référence",
+          "text": "Les heures consacrées aujourd’hui aux ouvertures, aux audits, aux redevances et au soutien."
+        },
+        {
+          "title": "En production dès 2 semaines",
+          "text": "Les meilleures pratiques configurées selon votre marque, avec vos données migrées."
+        },
+        {
+          "title": "Démontrer l’impact",
+          "text": "Les heures récupérées, mesurées par rapport au point de référence."
+        }
+      ],
+      "footnote": "*Un module de base, sans migration de données, une séance de formation. Les déploiements multimodules, la migration de données, les grandes équipes et les modules complémentaires prolongent l’échéancier."
+    },
+    "trust": {
+      "title": "SOC 2 Type II · Sécurité",
+      "text": "Audit indépendant, sans aucune exception. Demandez le rapport dans notre Trust Center.",
+      "cta": "Visiter le Trust Center"
+    },
+    "faq": {
+      "title": "Les questions des franchiseurs",
+      "items": [
+        {
+          "q": "Dois-je acheter des licences Salesforce?",
+          "a": [
+            "Non. FranFast inclut les licences Salesforce Platform (Enterprise Edition).",
+            "<strong>Vous utilisez déjà Salesforce?</strong> FranFast est aussi offert en package géré sur AppExchange, qui s’installe sur Sales Cloud ou Service Cloud, Enterprise Edition ou supérieure, pour que vous conserviez tout ce que vous avez déjà bâti. {appexchange}FranFast pour les clients Salesforce existants{/appexchange}"
+          ]
+        },
+        {
+          "q": "Combien de temps prend la mise en œuvre?",
+          "a": [
+            "Dès 2 semaines pour un module de base sans migration de données. Les déploiements multimodules, la migration de données, les grandes équipes et les modules complémentaires prennent plus de temps."
+          ]
+        },
+        {
+          "q": "Quelle IA peut faire fonctionner FranFast?",
+          "a": [
+            "Agentforce avec les Flex Credits, ou Claude et d’autres LLM par MCP et CLI."
+          ]
+        },
+        {
+          "q": "Est-ce que FranFast se connecte à mon PDV?",
+          "a": [
+            "Oui. FranFast peut se connecter à la plupart des systèmes de point de vente populaires qui offrent une API. Toast est offert en module complémentaire prêt à l’emploi, et FranFast est partenaire officiel de Toast."
+          ]
+        },
+        {
+          "q": "Est-ce seulement pour les grands franchiseurs?",
+          "a": [
+            "Non. FranFast accompagne les franchiseurs à toutes les étapes, des marques émergentes aux réseaux mondiaux."
+          ]
+        }
+      ]
+    },
+    "demo": {
+      "title": "Voyez votre réseau piloté par FranFast",
+      "text": "Une présentation de 30 minutes avec votre marque, vos processus et vos questions.",
+      "cta": "Réserver une démo"
+    }
+  },
+  "addons": {
+    "eyebrow": "Portfolio de produits",
+    "title": "Modules complémentaires",
+    "lead": "Les modules complémentaires sont des outils optionnels qui se branchent à FranFast pour que votre réseau en fasse plus : percevoir des paiements, signer des ententes, tenir des appels vidéo, analyser vos données ou connecter les systèmes que vous utilisez déjà. Choisissez seulement ce dont vous avez besoin aujourd’hui et ajoutez-en à mesure que vous grandissez.",
+    "note": "Certains modules peuvent nécessiter leur propre licence.",
+    "filter_label": "Filtrer les modules par catégorie",
+    "all": "Tous",
+    "count": "%d modules complémentaires",
+    "categories": {
+      "platform": "Plateforme",
+      "payments": "Paiements et commerce",
+      "communications": "Communications",
+      "data_ai": "Données et IA",
+      "integration": "Intégration et automatisation",
+      "documents": "Documents et formulaires",
+      "security": "Sécurité et vérification"
+    },
+    "partners": {
+      "salesforce": "Salesforce est une solution de gestion de la relation client (CRM) qui rapproche les entreprises et leurs clients. C’est une plateforme CRM intégrée qui donne à tous vos services, dont le marketing, les ventes, le commerce et le service à la clientèle, une vue unique et partagée de chaque client.",
+      "tableau": "Une plateforme d’analytique visuelle qui transforme la façon dont nous utilisons les données pour résoudre des problèmes.",
+      "claude": "Connectez Claude à FranFast par MCP pour que votre équipe pose des questions, analyse les données du réseau et exécute des tâches en langage naturel, avec les mêmes permissions et la même piste d’audit que dans Salesforce.",
+      "docusign": "Envoyez et signez vos ententes avec la solution de signature électronique de référence dans le monde.",
+      "stripe": "Une suite entièrement intégrée de produits financiers et de paiement. Réduisez vos coûts, augmentez vos revenus et gérez votre entreprise plus efficacement sur une plateforme entièrement intégrée. Utilisez Stripe pour tous vos besoins de paiement, la gestion de vos opérations de revenus et le lancement (ou l’invention) de nouveaux modèles d’affaires.",
+      "toast": "Un système infonuagique de gestion de restaurants qui offre une solution complète, intégrant le point de vente (PDV), la commande en ligne et la paie.",
+      "ringcentral": "Une plateforme infonuagique de communications unifiées qui offre une solution complète pour les appels, la vidéoconférence, la messagerie et la collaboration d’affaires.",
+      "zoom": "Des vidéoconférences de haute qualité, simples et accessibles, pour plusieurs participants.",
+      "verified-first": "Une plateforme de vérification des antécédents fiable et complète pour des embauches sûres et efficaces.",
+      "avast": "Un puissant moteur antivirus et une protection avancée contre les logiciels malveillants et les menaces en ligne pour une sécurité complète de vos appareils.",
+      "shopify": "Une plateforme de commerce électronique dont la technologie et les outils permettent aux entreprises et aux professionnels de lancer facilement une boutique en ligne en peu de temps.",
+      "ordercentral": "Un système centralisé conçu pour simplifier et automatiser la gestion des commandes, en particulier dans les contextes B2B et de commerce électronique.",
+      "chargent": "Une plateforme qui centralise les données clients dans Salesforce et intègre le traitement des paiements pour maximiser les revenus et les résultats.",
+      "autopilot": "L’une des solutions les plus simples et les plus intelligentes pour automatiser vos processus d’affaires.",
+      "tuvis": "Une solution complète pour réorienter les interactions d’entreprise de façon efficace, conforme et sécuritaire, avec des solutions entièrement intégrées pour chaque industrie.",
+      "mirage": "Des solutions avancées d’intégration téléphonie-informatique (CTI) conçues spécialement pour Salesforce.",
+      "sightcall": "Une plateforme de collaboration visuelle en temps réel qui permet des appels vidéo fluides et le travail d’équipe virtuel pour mieux interagir et résoudre les problèmes efficacement.",
+      "cirrus-insight": "Plus de productivité grâce à l’intégration du courriel et du CRM, pour gérer et synchroniser efficacement vos communications et vos données de vente.",
+      "mogli": "Accélérez la croissance, repérez les pertes de revenus et augmentez vos taux de conversion : renforcez votre stratégie d’engagement numérique avec Mogli Business Messaging.",
+      "workato": "Intégration et automatisation d’entreprise pour connecter rapidement et simplement applications et systèmes, et améliorer la productivité des flux de travail.",
+      "jitterbit": "Une plateforme d’intégration et de synchronisation des données conçue pour connecter systèmes et applications de façon efficace et sécuritaire.",
+      "geopointe": "Un outil de cartographie et de géolocalisation pour Salesforce qui permet de visualiser et d’analyser les données de façon interactive sur une carte.",
+      "conga": "Une plateforme de gestion documentaire et d’automatisation des processus qui permet de générer, signer et administrer des documents de façon efficace et productive.",
+      "formassembly": "La plateforme de référence pour des formulaires personnalisés et une collecte de données sécuritaire."
+    }
+  },
+  "blog": {
+    "eyebrow": "Blogue FranFast",
+    "title": "Des idées pour les marques de franchise",
+    "lead": "Guides pratiques sur le développement de franchise, les ouvertures, les opérations, les redevances et l’IA.",
+    "news_eyebrow": "Nouvelles FranFast",
+    "news_title": "Nouvelles et annonces",
+    "news_lead": "Nouvelles produit, événements et annonces de FranFast.",
+    "all": "Tous",
+    "filter_label": "Filtrer par catégorie",
+    "category_eyebrow": "Catégorie",
+    "tag_eyebrow": "Étiquette",
+    "search_eyebrow": "Recherche",
+    "search_title": "Résultats pour « %s »",
+    "search_count": "%d résultats",
+    "empty_title": "Aucun article pour l’instant",
+    "empty_text": "Il n’y a pas encore d’articles ici dans cette langue. Essayez une autre catégorie ou une recherche.",
+    "search_empty": "Aucun article ne correspond à votre recherche. Essayez d’autres mots.",
+    "read_more": "Lire l’article",
+    "min_read": "%d min de lecture",
+    "by": "Par %s",
+    "updated": "Mis à jour le %s",
+    "share": "Partager",
+    "copy_link": "Copier le lien",
+    "copied": "Lien copié",
+    "related": "À lire aussi",
+    "also_in": "Aussi offert en",
+    "back": "Retour au blogue",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "pagination": "Pagination",
+    "in_category": "Dans",
+    "prev_post": "Article précédent",
+    "next_post": "Article suivant"
+  },
+  "thank_you": {
+    "eyebrow": "Vous venez de faire le premier pas vers le succès!",
+    "title": "Merci de nous avoir écrit!",
+    "text_1": "Nous avons bien reçu votre demande. Un de nos experts FranFast communiquera avec vous le plus tôt possible.",
+    "text_2": "En attendant, nous vous invitons à découvrir ce que nos clients satisfaits disent de notre système de gestion de franchise.",
+    "cta": "Lire les témoignages clients",
+    "built_on": "Bâti sur et propulsé par"
+  },
+  "contact": {
+    "eyebrow": "Nous joindre",
+    "title": "Parlons-en!",
+    "email_label": "Courriel",
+    "phones_label": "Téléphone",
+    "form_title": "Formulaire de contact FranFast",
+    "follow_label": "Suivez-nous"
+  },
+  "reviews": {
+    "eyebrow": "L’expérience FranFast",
+    "title": "Témoignages et avis clients"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Qui nous sommes",
+      "text": "Dans le paysage d’affaires actuel, en constante évolution, l’innovation n’est pas une option : elle est essentielle. Chez Fast Cloud, créateurs de FranFast™, nous sommes une équipe de consultants dévoués, passionnés par la réussite des franchises de toutes tailles. Qu’il s’agisse de s’adapter aux nouveaux comportements des clients, de tirer parti de l’intelligence artificielle ou d’explorer les possibilités de la chaîne de blocs, nous aidons les franchises à naviguer dans la complexité et à se positionner comme chefs de file de leur industrie."
+    },
+    "mission": {
+      "label": "Notre mission :",
+      "title": "Libérer la puissance du potentiel humain",
+      "text": "Nous croyons que la transformation numérique ne se limite pas à adopter de nouvelles technologies; elle consiste à repenser en profondeur la façon dont votre entreprise fonctionne, interagit avec ses clients et stimule l’innovation. Nous nous engageons à offrir à nos clients l’expertise, l’accompagnement et le soutien dont ils ont besoin pour atteindre leurs objectifs d’affaires.",
+      "cta": "En savoir plus"
+    },
+    "video": {
+      "title": "Fast Cloud Consulting - Présentation de l’entreprise",
+      "text": "Version courte (en anglais)",
+      "play": "Lire la vidéo de présentation de Fast Cloud Consulting"
+    },
+    "experience": {
+      "eyebrow": "Expérience et parcours",
+      "title": "Au service des entreprises depuis 2006 : innovation, visibilité et rapidité",
+      "text": "Depuis 2006, Fast Cloud Consulting est un partenaire de confiance pour des entreprises du monde entier, en les aidant à transformer leurs opérations et à obtenir des résultats remarquables. Nous apportons une vaste expérience, ayant guidé autant des entreprises en démarrage que des organisations mondiales établies vers leurs objectifs de croissance.",
+      "points": [
+        "Un historique de réussites éprouvé dans plus de 30 pays",
+        "Adaptez vos stratégies à vos besoins et à la dynamique de votre marché."
+      ],
+      "cta": "En savoir plus"
+    },
+    "pledge": {
+      "eyebrow": "Fast Cloud Consulting",
+      "title": "Aider les clients de nos clients à réussir",
+      "text": "Chez Fast Cloud Consulting, nous croyons que les entreprises ont la responsabilité de redonner aux communautés qu’elles servent. C’est pourquoi nous sommes fiers de faire partie du mouvement Pledge 1%, un réseau mondial d’entreprises et de personnes engagées à consacrer leur temps, leurs compétences et leurs ressources à avoir un impact positif sur le monde.",
+      "item_title": "Pledge 1% : un engagement philanthropique",
+      "item_text": "Le mouvement Pledge 1% a été fondé par Yvon Chouinard, fondateur de Patagonia, et Marc Benioff, fondateur de Salesforce. Il invite les entreprises à consacrer 1 % de leur temps et 1 % de leurs produits ou services à des causes caritatives."
+    },
+    "excellence": {
+      "eyebrow": "Fast Cloud Consulting",
+      "title": "Aider les entreprises à prospérer dans un paysage numérique en constante évolution.",
+      "items": [
+        {
+          "title": "Services-conseils en transformation numérique",
+          "text": "Avec une équipe de plus de 50 collaborateurs directs répartis dans plus de 10 pays, Fast Cloud s’est imposée comme un fournisseur de premier plan de services-conseils en innovation et en transformation numérique pour des entreprises du monde entier."
+        },
+        {
+          "title": "Notre engagement envers l’excellence",
+          "text": "Nous sommes passionnés par la réussite des entreprises dans un paysage numérique en constante évolution. Nous croyons que l’innovation et la transformation numérique ne sont pas de simples mots à la mode, mais des stratégies essentielles pour rester compétitif et assurer une croissance durable."
+        }
+      ]
+    }
+  }
+}

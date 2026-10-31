@@ -1,0 +1,67 @@
+# Deploy the FranFast theme to the GoDaddy staging site over SSH (rsync).
+# Runs on every push to main, or manually from the Actions tab ("Run workflow").
+# Setup (once): see DEPLOY.md → GitHub secrets.
+name: Deploy to staging
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check the theme files
+        run: |
+          for f in lang/*.json config.json; do python3 -m json.tool "$f" > /dev/null || { echo "Invalid JSON: $f"; exit 1; }; done
+          find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l > /dev/null
+
+      - name: Check the target path
+        env:
+          STAGING_PATH: ${{ secrets.STAGING_PATH }}
+        run: |
+          case "$STAGING_PATH" in
+            */wp-content/themes/franfast|*/wp-content/themes/franfast/) ;;
+            *) echo "STAGING_PATH must end in /wp-content/themes/franfast (got: '$STAGING_PATH')"; exit 1 ;;
+          esac
+
+      - name: Set up SSH
+        env:
+          SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.STAGING_SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+
+      - name: Upload theme (rsync)
+        env:
+          HOST: ${{ secrets.STAGING_SSH_HOST }}
+          USER: ${{ secrets.STAGING_SSH_USER }}
+          PORT: ${{ secrets.STAGING_SSH_PORT }}
+          STAGING_PATH: ${{ secrets.STAGING_PATH }}
+        run: |
+          rsync -az --delete --itemize-changes \
+            --exclude '.git/' --exclude '.github/' --exclude '.gitignore' --exclude 'DEPLOY.md' --exclude '.DS_Store' \
+            -e "ssh -i ~/.ssh/id_deploy -p ${PORT:-22} -o StrictHostKeyChecking=yes" \
+            ./ "$USER@$HOST:${STAGING_PATH%/}/"
+
+      - name: Clear page cache (WP Fastest Cache)
+        env:
+          HOST: ${{ secrets.STAGING_SSH_HOST }}
+          USER: ${{ secrets.STAGING_SSH_USER }}
+          PORT: ${{ secrets.STAGING_SSH_PORT }}
+          STAGING_PATH: ${{ secrets.STAGING_PATH }}
+        run: |
+          WP_ROOT="${STAGING_PATH%/wp-content/themes/franfast*}"
+          ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" "$USER@$HOST" \
+            "rm -rf '$WP_ROOT/wp-content/cache/all' '$WP_ROOT/wp-content/cache/wpfc-minified' 2>/dev/null; echo 'Cache cleared'" || echo "Cache not cleared (clear it from WP Fastest Cache)"

@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Motion: hover effects and entrance animations.
+   Only transform / opacity / shadow / color change, so nothing moves the layout.
+   Loaded only when config.json → motion.enabled is true (inc/setup.php). Off for prefers-reduced-motion.
+   Scroll reveal needs JS (main.js adds .ff-reveal); without JS all content is visible.
+   ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  :root { --ff-ease: cubic-bezier(.2, .7, .2, 1); --ff-lift: 0 14px 32px rgba(10, 26, 58, .09); }
+
+  /* Buttons */
+  .btn { transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .25s var(--ff-ease), transform .25s var(--ff-ease); }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(9, 87, 195, .18); }
+  .btn:active { transform: translateY(0); box-shadow: none; transition-duration: .08s; }
+  .btn svg, .link-arrow svg { transition: transform .25s var(--ff-ease); }
+  .btn:hover svg, .link-arrow:hover svg { transform: translateX(3px); }
+
+  /* Cards */
+  .card, .addon, .addon-card, .review__inner, .post-card, .post-nav__link, .about-pillar {
+    transition: transform .3s var(--ff-ease), box-shadow .3s var(--ff-ease), border-color .2s ease;
+  }
+  .card:hover, .addon:hover, .addon-card:hover, .review__inner:hover, .post-card:hover, .post-nav__link:hover {
+    transform: translateY(-4px); box-shadow: var(--ff-lift); border-color: var(--ff-blue-300);
+  }
+  .about-pillar:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0, 0, 0, .25); border-color: var(--ff-navy-600); }
+  .addon-card__logo img, .review__logo img { transition: transform .3s var(--ff-ease); }
+  .addon-card:hover .addon-card__logo img, .review__inner:hover .review__logo img { transform: scale(1.04); }
+  .module__icon { transition: transform .3s var(--ff-ease); }
+  .card:hover .module__icon { transform: rotate(-4deg) scale(1.06); }
+
+  /* Links, chips, nav, icons */
+  .chip, .site-nav__list a, .lang-switch__item, .site-footer a, .pagination a.page-numbers, .share__btn { transition: color .2s ease, background-color .2s ease, border-color .2s ease; }
+  .site-footer__social a, .contact__social a, .site-header__call, .site-header__toggle { transition: transform .2s var(--ff-ease), color .2s ease, border-color .2s ease; }
+  .site-footer__social a:hover, .contact__social a:hover, .site-header__call:hover { transform: translateY(-2px); }
+  .logo-strip__list img { transition: filter .25s ease, transform .3s var(--ff-ease); }
+  .logo-strip__list img:hover { transform: scale(1.05); }
+  .faq__item summary { transition: color .2s ease; }
+  .faq__item summary:hover { color: var(--ff-blue); }
+
+  /* Video play button */
+  .video-card__play { transition: transform .25s var(--ff-ease), box-shadow .25s ease; }
+  .video-card__play:hover { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(255, 255, 255, .15); }
+
+  /* Page heads: fade up on load (pure CSS) */
+  @keyframes ffUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .hero__copy > *, .listing-head__inner > *, .ty-hero__inner > * { animation: ffUp .7s var(--ff-ease) both; }
+  .hero__copy > :nth-child(2), .listing-head__inner > :nth-child(2), .ty-hero__inner > :nth-child(2) { animation-delay: .08s; }
+  .hero__copy > :nth-child(3), .listing-head__inner > :nth-child(3), .ty-hero__inner > :nth-child(3) { animation-delay: .16s; }
+  .hero__copy > :nth-child(n+4), .listing-head__inner > :nth-child(n+4), .ty-hero__inner > :nth-child(n+4) { animation-delay: .24s; }
+  .agent-card { animation: ffUp .8s var(--ff-ease) .2s both; }
+
+  /* Scroll reveal (main.js) */
+  .ff-reveal [data-ff-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .7s var(--ff-ease); transition-delay: calc(var(--ff-i, 0) * 70ms); }
+  .ff-reveal [data-ff-reveal].is-in { opacity: 1; transform: none; }
+
+  /* Logo: the diamond appears, then the two white "FF" triangles grow out of its center; the wordmark follows. */
+  @keyframes ffLogoMark { from { opacity: 0; transform: scale(.6) rotate(-45deg); } to { opacity: 1; transform: none; } }
+  @keyframes ffLogoTri { 0% { opacity: 0; transform: scale(0) rotate(-90deg); } 60% { opacity: 1; } 100% { opacity: 1; transform: none; } }
+  @keyframes ffLogoTriHover { 0% { opacity: 0; transform: scale(0) rotate(-90deg); } 60% { opacity: 1; } 100% { opacity: 1; transform: none; } } /* Same as ffLogoTri; a new name restarts it on hover. */
+  @keyframes ffLogoWord { from { opacity: 0; transform: translateX(-24px); } to { opacity: 1; transform: none; } }
+  .site-header__logo .ff-logo__mark { transform-box: fill-box; transform-origin: center; animation: ffLogoMark .6s var(--ff-ease) both; }
+  .site-header__logo .ff-logo__tri { transform-box: view-box; transform-origin: 138px 164px; } /* Center of the diamond (SVG units). */
+  .site-header__logo .ff-logo__tri--a { animation: ffLogoTri .8s var(--ff-ease) .35s both; }
+  .site-header__logo .ff-logo__tri--b { animation: ffLogoTri .8s var(--ff-ease) .5s both; }
+  .site-header__logo path:not(.ff-logo__mark):not(.ff-logo__tri) { animation: ffLogoWord .7s var(--ff-ease) .3s both; }
+  .site-header__brand:hover .ff-logo__tri--a { animation: ffLogoTriHover .7s var(--ff-ease) both; }
+  .site-header__brand:hover .ff-logo__tri--b { animation: ffLogoTriHover .7s var(--ff-ease) .12s both; }
+}

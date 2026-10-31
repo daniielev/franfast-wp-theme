@@ -1,0 +1,600 @@
+{
+  "_readme": "Site-wide data that does not change by language. Labels live in lang/*.json. Empty strings are skipped in the output. newsletter.action = Pardot Form Handler URL; field names must match the handler External Field Names.",
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "default_language": "en",
+  "org": {
+    "name": "FranFast",
+    "legal_name": "Fast Cloud Consulting, Corp.",
+    "parent_name": "Fast Cloud Consulting",
+    "parent_url": "https://fastcloudconsulting.com",
+    "email": "info@franfast.io",
+    "street": "1395 Brickell Ave., Suite 800",
+    "city": "Miami",
+    "region": "FL",
+    "postal_code": "33131",
+    "country": "US",
+    "legal_url": "https://www.fastcloudconsulting.com"
+  },
+  "phones": [
+    {
+      "key": "US",
+      "display": "877-CRM-6466",
+      "tel": "+18772766466"
+    },
+    {
+      "key": "UK",
+      "display": "(020) 3743-3276",
+      "tel": "+442037433276"
+    },
+    {
+      "key": "MX",
+      "display": "(55) 6599-007",
+      "tel": "+52556599007"
+    },
+    {
+      "key": "CR",
+      "display": "4101-2140",
+      "tel": "+50641012140"
+    },
+    {
+      "key": "CO",
+      "display": "(1) 580-2695",
+      "tel": "+5715802695"
+    },
+    {
+      "key": "OTHER",
+      "display": "+1 (305) 676-2472",
+      "tel": "+13056762472"
+    }
+  ],
+  "legal": [
+    {
+      "key": "privacy",
+      "path": "/privacy-policy/"
+    },
+    {
+      "key": "terms",
+      "path": "/terms-of-service/"
+    },
+    {
+      "key": "cookies",
+      "path": "/cookie-policy/"
+    },
+    {
+      "key": "caup",
+      "path": "/caup/"
+    },
+    {
+      "key": "subprocessor",
+      "path": "/subprocessor-list/"
+    },
+    {
+      "key": "dpa",
+      "path": "/dpa/"
+    },
+    {
+      "key": "refund",
+      "path": "/cancellation-and-refund-policy/"
+    }
+  ],
+  "social": [
+    {
+      "key": "linkedin",
+      "url": "https://www.linkedin.com/company/franfast-suite/"
+    },
+    {
+      "key": "youtube",
+      "url": "https://www.youtube.com/@FranFastFranchiseManagement"
+    },
+    {
+      "key": "facebook",
+      "url": "https://www.facebook.com/share/1A6TwgShMD/?mibextid=wwXIfr"
+    }
+  ],
+  "badges": [
+    {
+      "key": "salesforce",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Salesforce_Partner_Badge_Hrzntl_RGB.png",
+      "width": 1022,
+      "height": 300,
+      "url": ""
+    },
+    {
+      "key": "soc2",
+      "img": "https://fastcloudconsulting.com/assets/badge-soc-type-2.png",
+      "width": 0,
+      "height": 0,
+      "url": "https://trust.fastcloudconsulting.com"
+    },
+    {
+      "key": "claude",
+      "img": "https://fastcloudconsulting.com/assets/claude-badge.png",
+      "width": 0,
+      "height": 0,
+      "url": ""
+    },
+    {
+      "key": "ifa",
+      "img": "https://fastcloudconsulting.com/assets/badge-ifa.png",
+      "width": 0,
+      "height": 0,
+      "url": ""
+    }
+  ],
+  "trust_center": "https://trust.fastcloudconsulting.com",
+  "appexchange_url": "https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HNWesUAH",
+  "og_image": "",
+  "_clients_readme": "Home logo strip. img = full URL (preferred) or a path inside assets/. display_height in px. Empty img = the brand name is shown as text until the logo URL is set.",
+  "clients": [
+    {
+      "name": "Dave's Hot Chicken",
+      "img": "img/clients/daves-hot-chicken.webp",
+      "width": 160,
+      "height": 160,
+      "display_height": 48
+    },
+    {
+      "name": "bb.q Chicken",
+      "img": "img/clients/bbq-chicken.webp",
+      "width": 266,
+      "height": 102,
+      "display_height": 36
+    },
+    {
+      "name": "Chatime",
+      "img": "img/clients/chatime.webp",
+      "width": 480,
+      "height": 96,
+      "display_height": 26
+    },
+    {
+      "name": "Crunch Fitness",
+      "img": "https://www.fastcloudconsulting.com/assets/crunch-fitness-logo.png",
+      "width": 0,
+      "height": 0,
+      "display_height": 56
+    },
+    {
+      "name": "Assisting Hands Home Care",
+      "img": "img/clients/assisting-hands.webp",
+      "width": 283,
+      "height": 160,
+      "display_height": 40
+    },
+    {
+      "name": "Any Lab Test Now",
+      "img": "img/clients/any-lab-test-now.webp",
+      "width": 480,
+      "height": 95,
+      "display_height": 26
+    },
+    {
+      "name": "WorldKids School",
+      "img": "img/clients/worldkids-school.webp",
+      "width": 262,
+      "height": 160,
+      "display_height": 40
+    },
+    {
+      "name": "Wow Windowboxes",
+      "img": "img/clients/wow-windowboxes.webp",
+      "width": 374,
+      "height": 160,
+      "display_height": 38
+    }
+  ],
+  "home": {
+    "hours_recovered": "99",
+    "video_url": "https://www.youtube.com/watch?v=qAsyvi4X6ug",
+    "_readme": "hours_recovered: number shown in the hero agent card (empty = hidden). video_url: YouTube/Vimeo/MP4 for 'Ask FranFast' (empty = poster only). Placeholder video until the FranFast AI video exists: Fast Cloud company overview (from /about-us/)."
+  },
+  "newsletter": {
+    "enabled": true,
+    "action": "",
+    "result_origins": [
+      "https://franfast.io"
+    ],
+    "fields": {
+      "first_name": "first_name",
+      "last_name": "last_name",
+      "email": "email",
+      "honeypot": "website",
+      "language": "preferred_language",
+      "page": "signup_page"
+    },
+    "hide_on_routes": [
+      "home",
+      "contact"
+    ]
+  },
+  "nav": [
+    {
+      "key": "platform",
+      "route": "home",
+      "hash": "platform"
+    },
+    {
+      "key": "ai",
+      "route": "home",
+      "hash": "franfast-ai"
+    },
+    {
+      "key": "expand",
+      "route": "home",
+      "hash": "expand"
+    },
+    {
+      "key": "customers",
+      "route": "home",
+      "hash": "customers"
+    },
+    {
+      "key": "blog",
+      "route": "blog"
+    },
+    {
+      "key": "about",
+      "route": "about"
+    }
+  ],
+  "footer_columns": [
+    {
+      "key": "platform",
+      "links": [
+        {
+          "key": "platform",
+          "route": "home",
+          "hash": "platform"
+        },
+        {
+          "key": "ai",
+          "route": "home",
+          "hash": "franfast-ai"
+        },
+        {
+          "key": "headless",
+          "route": "home",
+          "hash": "headless"
+        },
+        {
+          "key": "add_ons",
+          "route": "add_ons"
+        }
+      ]
+    },
+    {
+      "key": "company",
+      "links": [
+        {
+          "key": "about",
+          "route": "about"
+        },
+        {
+          "key": "reviews",
+          "route": "reviews"
+        },
+        {
+          "key": "blog",
+          "route": "blog"
+        },
+        {
+          "key": "news",
+          "route": "news"
+        },
+        {
+          "key": "contact",
+          "route": "contact"
+        }
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "key": "salesforce",
+      "name": "Salesforce",
+      "category": "platform",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Salesforce_Partner_Badge_Hrzntl_RGB.png",
+      "width": 1022,
+      "height": 300
+    },
+    {
+      "key": "tableau",
+      "name": "Tableau",
+      "category": "data_ai",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.11.png",
+      "width": 578,
+      "height": 168
+    },
+    {
+      "key": "claude",
+      "name": "Claude",
+      "category": "data_ai",
+      "img": "https://fastcloudconsulting.com/assets/claude-logo.png",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "key": "docusign",
+      "name": "DocuSign",
+      "category": "documents",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Docusign-Horizontal_Black.png",
+      "width": 2500,
+      "height": 504
+    },
+    {
+      "key": "stripe",
+      "name": "Stripe",
+      "category": "payments",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Stripe-Partner-Badge-Brand.png",
+      "width": 750,
+      "height": 130
+    },
+    {
+      "key": "toast",
+      "name": "Toast",
+      "category": "payments",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Toast.png",
+      "width": 445,
+      "height": 113
+    },
+    {
+      "key": "ringcentral",
+      "name": "RingCentral",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.53.png",
+      "width": 572,
+      "height": 158
+    },
+    {
+      "key": "zoom",
+      "name": "Zoom",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.15.png",
+      "width": 424,
+      "height": 156
+    },
+    {
+      "key": "verified-first",
+      "name": "Verified First",
+      "category": "security",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.44.52.png",
+      "width": 594,
+      "height": 138
+    },
+    {
+      "key": "avast",
+      "name": "Avast",
+      "category": "security",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.44.33.png",
+      "width": 502,
+      "height": 160
+    },
+    {
+      "key": "shopify",
+      "name": "Shopify",
+      "category": "payments",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.18.png",
+      "width": 572,
+      "height": 186
+    },
+    {
+      "key": "ordercentral",
+      "name": "OrderCentral",
+      "category": "payments",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.25.png",
+      "width": 534,
+      "height": 146
+    },
+    {
+      "key": "chargent",
+      "name": "Chargent",
+      "category": "payments",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.31.png",
+      "width": 580,
+      "height": 172
+    },
+    {
+      "key": "autopilot",
+      "name": "Autopilot",
+      "category": "integration",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.41.png",
+      "width": 576,
+      "height": 140
+    },
+    {
+      "key": "tuvis",
+      "name": "Tuvis",
+      "category": "security",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.42.59.png",
+      "width": 532,
+      "height": 168
+    },
+    {
+      "key": "mirage",
+      "name": "Mirage",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.04.png",
+      "width": 472,
+      "height": 170
+    },
+    {
+      "key": "sightcall",
+      "name": "SightCall",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.22.png",
+      "width": 530,
+      "height": 178
+    },
+    {
+      "key": "cirrus-insight",
+      "name": "Cirrus Insight",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.27.png",
+      "width": 536,
+      "height": 148
+    },
+    {
+      "key": "mogli",
+      "name": "Mogli",
+      "category": "communications",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.32.png",
+      "width": 482,
+      "height": 232
+    },
+    {
+      "key": "workato",
+      "name": "Workato",
+      "category": "integration",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.42.png",
+      "width": 566,
+      "height": 136
+    },
+    {
+      "key": "jitterbit",
+      "name": "Jitterbit",
+      "category": "integration",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.48.png",
+      "width": 472,
+      "height": 138
+    },
+    {
+      "key": "geopointe",
+      "name": "Geopointe",
+      "category": "data_ai",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.59.png",
+      "width": 570,
+      "height": 154
+    },
+    {
+      "key": "conga",
+      "name": "Conga",
+      "category": "documents",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.44.27.png",
+      "width": 460,
+      "height": 162
+    },
+    {
+      "key": "formassembly",
+      "name": "FormAssembly",
+      "category": "documents",
+      "img": "https://franfast.io/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.44.40.png",
+      "width": 560,
+      "height": 116
+    }
+  ],
+  "news_category": "news",
+  "noindex_routes": [
+    "thank_you"
+  ],
+  "thank_you": {
+    "background": "https://franfast.io/wp-content/uploads/2024/12/21.jpg"
+  },
+  "built_on": [
+    {
+      "name": "Salesforce Partner",
+      "img": "https://franfast.io/wp-content/uploads/2025/02/Salesforce_Partner_Badge_Hrzntl_RGB.png",
+      "width": 1022,
+      "height": 300,
+      "display_height": 56
+    },
+    {
+      "name": "Slack",
+      "img": "img/slack-logo.svg",
+      "width": 498,
+      "height": 127,
+      "display_height": 30
+    },
+    {
+      "name": "Claude Partner – Certified",
+      "img": "img/claude-partner-badge.svg",
+      "width": 90,
+      "height": 90,
+      "display_height": 64
+    }
+  ],
+  "blog_category": "blog",
+  "contact_form": {
+    "_readme": "Pardot form shown on /contact-us/ in an iframe. The form layout posts {pardotFormHeight} to resize it.",
+    "src": "https://go.fastcloudconsulting.com/l/916581/2025-05-21/vszwf",
+    "origin": "https://go.fastcloudconsulting.com",
+    "height": 900
+  },
+  "_reviews_readme": "Customer testimonials for /reviews/ (verbatim from production, English in every language). logo = full URL or path inside assets/. title = optional review headline.",
+  "reviews": [
+    {
+      "name": "Shannon Swenson",
+      "role": "VP Franchise Development",
+      "company": "Dave's Hot Chicken",
+      "logo": "img/clients/daves-hot-chicken.webp",
+      "title": "",
+      "quote": "I’ve worked with FranFast for 7 years. I formerly used Franconnect and became frustrated that I couldn’t customize to my specific needs in franchise development. After using FranFast at another organization I knew I would implement it when I joined Dave’s Hot Chicken. I’ve been able to customize to very specific features and fantastic dashboards that have helped me streamline the development process. Josue my developer has been amazing to work with. Rogelio and his team are all top notch. I’ll never use another software in franchise development."
+    },
+    {
+      "name": "Alicia Jang",
+      "role": "Corp Strategy",
+      "company": "bb.q Chicken",
+      "logo": "https://franfast.io/wp-content/uploads/2025/04/BBQ-Chicken_Logo-300x300.png",
+      "title": "FranFast is the Best!!",
+      "quote": "FranFast has significantly streamlined our workflow, allowing us to manage data efficiently and collaborate effortlessly as a team. The interface is intuitive, making it easy to navigate even for those who aren’t tech-savvy. The performance is reliable, and we appreciate the excellent customer support that is always ready to assist promptly. FranFast become an indispensable tool for our business, and we highly recommend it to other organizations looking for a powerful cloud solution."
+    },
+    {
+      "name": "Rita de Groot",
+      "role": "Salesforce Administrator",
+      "company": "Rhino 7",
+      "logo": "https://fastcloudconsulting.com/assets/rhino7-logo.png",
+      "title": "",
+      "quote": "FranFast was able to get us set up with 20 years of data being moved over and they made the transition & move work seamlessly. If we found any changes that would need to be addressed or worked on, they were on it and quickly would find a solution. It has been one year, and we can say that the commitment of helping our needs was always there from FranFast. Thank you all!"
+    },
+    {
+      "name": "Joe Schadle",
+      "role": "Chief Development Officer (CDO)",
+      "company": "Rhino 7",
+      "logo": "https://fastcloudconsulting.com/assets/rhino7-logo.png",
+      "title": "",
+      "quote": "The Fast Cloud (FranFast) team was a pleasure to work with the entire process of building out the Rhino 7 Franchise software. Their team continues to deliver outstanding customer service throughout the entire process. I would highly recommend their services to anyone in Franchising seeking help with software support services."
+    },
+    {
+      "name": "Allyson Woo",
+      "role": "Franchise/Marketing Manager",
+      "company": "Tapioca Express",
+      "logo": "https://franfast.io/wp-content/uploads/2025/04/tapioca-300x119.png",
+      "title": "Good service and very helpful tool",
+      "quote": "I work with Salesforce FranFast team for our franchise solutions. The team is very professional and service is good, they help me build up a system exactly what we need to grow our business and organize all process, their developer team is excellent, I highly recommend their franchise solution."
+    },
+    {
+      "name": "Lorrie Siegwarth",
+      "role": "Onboarding and Training Specialist at Senior Care Authority",
+      "company": "Senior Care Authority",
+      "logo": "https://franfast.io/wp-content/uploads/2025/02/senior-care-1.png",
+      "title": "",
+      "quote": "What truly sets Josue apart is his unwavering support for our team; he’s consistently available to address our queries and is always eager to assist both our corporate team and franchise owners. Whenever I reach out with requests for modifications, edits, updates, or any task, I can trust Josue to respond promptly with a well-considered solution already in place. Furthermore, Josue’s talent for transforming my Excel spreadsheets, screenshots, and documents into precisely the functionality I need is nothing short of indispensable."
+    },
+    {
+      "name": "Rob Gandley",
+      "role": "Vice President, Marketing & Business Development",
+      "company": "Senior Care Authority",
+      "logo": "https://franfast.io/wp-content/uploads/2025/02/senior-care-1.png",
+      "title": "",
+      "quote": "My franchise client uses this app every day to fuel their growth. It is built with Franchise Development in mind. The team is flexible and can customize, integrate and find inventive ways to get the most value out of the SF technology at the lowest costs. The app is built with a franchise sales framework yet provided us the flexibility to customize it and suite the broader needs of the brand. The team is easy to work with, follow through and honestly have made my role much easier because of it. Highly recommend the app and team!"
+    }
+  ],
+  "about": {
+    "_readme": "About page: video (YouTube, loads on click via youtube-nocookie), image for the Pledge 1% block, parent company page for the Read More links.",
+    "video_url": "https://www.youtube.com/watch?v=qAsyvi4X6ug",
+    "pledge_image": "https://franfast.io/wp-content/uploads/2024/10/finance-14-xcv-6-copy-1.png",
+    "pledge_image_width": 1088,
+    "pledge_image_height": 1190,
+    "company_url": "https://www.fastcloudconsulting.com/about-us/"
+  },
+  "motion": {
+    "_readme": "enabled: hover effects, entrance and scroll animations (assets/css/motion.css + reveal in main.js). agent_autoplay: the Home FranFast AI demo plays by itself; when false it only changes with the dots. progress_bar: thin bar at the very top that fills as you scroll.",
+    "enabled": true,
+    "agent_autoplay": true,
+    "progress_bar": true
+  }
+}

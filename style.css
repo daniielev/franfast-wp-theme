@@ -1,0 +1,14 @@
+/*
+Theme Name: FranFast
+Theme URI: https://franfast.io
+Author: Fast Cloud Consulting
+Author URI: https://fastcloudconsulting.com
+Description: FranFast corporate site. Plugin-free classic theme: one PHP template per page, translations in /lang/*.json (EN · ES · PT), native SEO, hreflang and schema.
+Version: 0.1.0
+Requires at least: 6.5
+Requires PHP: 8.0
+Text Domain: franfast
+License: Proprietary
+*/
+
+/* Styles live in assets/css/main.css (enqueued with a file-time version). */
