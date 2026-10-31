@@ -40,7 +40,9 @@ jobs:
           KNOWN_HOSTS: ${{ secrets.STAGING_SSH_KNOWN_HOSTS }}
         run: |
           mkdir -p ~/.ssh && chmod 700 ~/.ssh
-          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          # Clear message if the secret is not a valid private key (e.g. the .pub was pasted, or lines were lost).
+          ssh-keygen -y -f ~/.ssh/id_deploy > /dev/null || { echo "STAGING_SSH_KEY is not a valid private key. Paste the whole file ~/.ssh/franfast_staging_deploy (from -----BEGIN to -----END)."; exit 1; }
           printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
 
       - name: Upload theme (rsync)
