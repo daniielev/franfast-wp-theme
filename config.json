@@ -86,7 +86,8 @@
     }
   ],
   "legal_redirects": {
-    "_readme": "Old legal URLs → new ones (301). Handled in inc/legal.php.",
+    "_readme": "Old URLs → new ones (301): legal pages + old blog page. Handled in inc/legal.php.",
+    "/our-blog/": "/blog/",
     "/caup/": "/acceptable-use/",
     "/acceptable-use-policy/": "/acceptable-use/",
     "/subprocessor-list/": "/subprocessors/",
