@@ -255,7 +255,8 @@
     },
     "hide_on_routes": [
       "home",
-      "contact"
+      "contact",
+      "pillars"
     ]
   },
   "nav": [

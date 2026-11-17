@@ -327,7 +327,7 @@
         },
         {
           "icon": "opening",
-          "title": "Apertura de Locales",
+          "title": "Seguimiento de Apertura de Locales",
           "text": "Cada apertura en una sola línea de tiempo: sitio, construcción, permisos, contratación y lanzamiento, con responsables y fechas.",
           "anchor": "new-store-opening"
         },
@@ -341,7 +341,7 @@
           "icon": "portal",
           "title": "Portal y CRM del Franquiciado",
           "text": "Un solo lugar para los franquiciados: Manual de Operaciones con búsqueda, capacitación, solicitudes de soporte y anuncios, en su idioma.",
-          "note": "Opciones: CRM del Franquiciado · Gestión del Aprendizaje (LMS)",
+          "note": "Opciones: Gestión del Aprendizaje (LMS)",
           "anchor": "franchisee-portal-crm"
         },
         {
@@ -765,7 +765,7 @@
     "lead": "Cinco módulos sobre un solo registro de tu red. Cada uno funciona desde el primer día y se conecta con las herramientas que tu marca ya usa.",
     "toc_label": "Ir a un pilar",
     "options_label": "Opciones",
-    "options_note": "Estas integraciones son opcionales y pueden requerir licencias adicionales.",
+    "options_note": "Son funcionalidades adicionales opcionales que puedes agregar a tu pilar de FranFast.",
     "ai_link": "Conoce FranFast AI",
     "options": {
       "franchise-development": [
@@ -780,7 +780,6 @@
         "Gestión de eventos"
       ],
       "franchisee-portal-crm": [
-        "CRM del Franquiciado",
         "Gestión del Aprendizaje (LMS)"
       ],
       "royalty-management": [

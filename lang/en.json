@@ -327,7 +327,7 @@
         },
         {
           "icon": "opening",
-          "title": "New Store Opening",
+          "title": "New Store Opening Tracker",
           "text": "Every opening on one timeline: site, construction, permits, hiring and launch, with owners and dates.",
           "anchor": "new-store-opening"
         },
@@ -341,7 +341,7 @@
           "icon": "portal",
           "title": "Franchisee Portal & CRM",
           "text": "One home for franchisees: a searchable Operations Manual, training, support requests and announcements, in their language.",
-          "note": "Options: Franchisee CRM · Learning Management (LMS)",
+          "note": "Options: Learning Management (LMS)",
           "anchor": "franchisee-portal-crm"
         },
         {
@@ -765,7 +765,7 @@
     "lead": "Five modules on one record of your network. Each one works out of the box and connects to the tools your brand already uses.",
     "toc_label": "Jump to a pillar",
     "options_label": "Options",
-    "options_note": "Options are optional and may require additional licenses.",
+    "options_note": "These are optional additional features you may add to your FranFast pillar.",
     "ai_link": "See FranFast AI",
     "options": {
       "franchise-development": [
@@ -780,7 +780,6 @@
         "Events management"
       ],
       "franchisee-portal-crm": [
-        "Franchisee CRM",
         "Learning Management (LMS)"
       ],
       "royalty-management": [

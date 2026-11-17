@@ -3,7 +3,7 @@
  * Our pillars (/our-pillars/, /es/nuestros-pilares/, /pt/nossos-pilares/, /fr/nos-piliers/).
  * One section per core module with the integrations ("Options") it supports; each section is linkable: /our-pillars/#royalty-management.
  * Module title/text/icon: lang/*.json → home.platform.modules (same copy as the Home cards, matched by "anchor").
- * Page copy + options: lang/*.json → pillars. FranFast AI closes the page as a navy band (Network command style): agents across the 5 pillars.
+ * Page copy + options: lang/*.json → pillars. FranFast AI closes the page as a navy band (Network command style): text left, CTA right.
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -61,20 +61,13 @@ $ff_options = (array) ff_t( 'pillars.options' );
 
 <?php if ( $ff_ai ) : ?>
 	<section class="section section--navy pillar-ai" aria-labelledby="ff-pillar-ai">
-		<div class="container split split--center">
-			<div class="split__main stack-sm">
+		<div class="container pillar-ai__inner">
+			<div class="stack-sm pillar-ai__text">
 				<p class="eyebrow eyebrow--cyan"><?php ff_e( 'home.ai.eyebrow' ); ?></p>
 				<h2 class="h2 h2--sm" id="ff-pillar-ai"><?php ff_e( 'home.ai.title' ); ?></h2>
 				<p class="lead lead--sm"><?php echo esc_html( $ff_ai['text'] ); ?></p>
-				<a class="btn btn--inverse btn--lg" href="<?php echo esc_url( ff_url( 'home', null, 'franfast-ai' ) ); ?>"><?php ff_e( 'pillars.ai_link' ); ?></a>
 			</div>
-			<ul class="split__side stat-grid pillar-ai__grid">
-				<?php foreach ( $ff_modules as $ff_m ) : ?>
-					<li><a class="stat stat--live" href="#<?php echo esc_attr( $ff_m['anchor'] ); ?>">
-						<span class="stat__label"><span class="pulse-dot ff-pulse" aria-hidden="true"></span><?php echo esc_html( $ff_m['title'] ); ?></span>
-					</a></li>
-				<?php endforeach; ?>
-			</ul>
+			<a class="btn btn--inverse btn--lg" href="<?php echo esc_url( ff_url( 'home', null, 'franfast-ai' ) ); ?>"><?php ff_e( 'pillars.ai_link' ); ?></a>
 		</div>
 	</section>
 <?php endif; ?>

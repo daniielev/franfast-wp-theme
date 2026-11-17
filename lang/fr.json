@@ -327,7 +327,7 @@
         },
         {
           "icon": "opening",
-          "title": "Ouverture de nouveaux établissements",
+          "title": "Suivi de l’ouverture de nouveaux établissements",
           "text": "Chaque ouverture sur un seul échéancier : site, construction, permis, embauche et lancement, avec responsables et dates.",
           "anchor": "new-store-opening"
         },
@@ -341,7 +341,7 @@
           "icon": "portal",
           "title": "Portail et CRM des franchisés",
           "text": "Un seul endroit pour les franchisés : un manuel d’exploitation consultable, la formation, les demandes de soutien et les annonces, dans leur langue.",
-          "note": "Options : CRM des franchisés · Gestion de l’apprentissage (LMS)",
+          "note": "Options : Gestion de l’apprentissage (LMS)",
           "anchor": "franchisee-portal-crm"
         },
         {
@@ -765,7 +765,7 @@
     "lead": "Cinq modules sur un seul registre de votre réseau. Chacun fonctionne dès le départ et se connecte aux outils que votre marque utilise déjà.",
     "toc_label": "Aller à un pilier",
     "options_label": "Options",
-    "options_note": "Ces intégrations sont facultatives et peuvent nécessiter des licences supplémentaires.",
+    "options_note": "Ce sont des fonctionnalités supplémentaires facultatives que vous pouvez ajouter à votre pilier FranFast.",
     "ai_link": "Découvrir FranFast AI",
     "options": {
       "franchise-development": [
@@ -780,7 +780,6 @@
         "Gestion d’événements"
       ],
       "franchisee-portal-crm": [
-        "CRM des franchisés",
         "Gestion de l’apprentissage (LMS)"
       ],
       "royalty-management": [
