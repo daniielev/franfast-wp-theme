@@ -122,6 +122,7 @@ $first     = $scenarios[0] ?? array( 'persona' => '', 'prompt' => '', 'steps' =>
 					<h3 class="module__title"><?php echo esc_html( $module['title'] ); ?></h3>
 					<p class="module__text"><?php echo esc_html( $module['text'] ); ?></p>
 					<?php if ( ! empty( $module['note'] ) ) : ?><p class="module__note"><?php echo esc_html( $module['note'] ); ?></p><?php endif; ?>
+					<?php if ( ! empty( $module['anchor'] ) ) : ?><a class="module__link" href="<?php echo esc_url( ff_url( 'pillars', null, (string) $module['anchor'] ) ); ?>"><?php echo esc_html( $t( 'platform.see_options' ) ); ?> <?php echo ff_icon( 'arrow', 16 ); // phpcs:ignore ?></a><?php endif; ?>
 				</li>
 			<?php endforeach; ?>
 		</ul>
@@ -253,14 +254,17 @@ $first     = $scenarios[0] ?? array( 'persona' => '', 'prompt' => '', 'steps' =>
 			<p class="lead lead--sm"><?php echo esc_html( $t( 'enterprise.lead' ) ); ?></p>
 			<a class="btn btn--inverse btn--lg" href="<?php echo esc_url( $contact ); ?>"><?php echo esc_html( $t( 'enterprise.cta' ) ); ?></a>
 		</div>
-		<ul class="split__side stat-grid">
-			<?php foreach ( (array) $t( 'enterprise.stats' ) as $stat ) : ?>
+		<div class="split__side stack-sm">
+		<ul class="stat-grid">
+			<?php foreach ( (array) $t( 'enterprise.stats' ) as $ff_si => $stat ) : ?>
 				<li class="stat<?php echo ! empty( $stat['live'] ) ? ' stat--live' : ''; ?>">
-					<span class="stat__label"><?php if ( ! empty( $stat['live'] ) ) : ?><span class="pulse-dot ff-pulse" aria-hidden="true"></span><?php endif; ?><?php echo esc_html( $stat['label'] ); ?></span>
+					<span class="stat__label"><?php if ( ! empty( $stat['live'] ) ) : ?><span class="pulse-dot ff-pulse" aria-hidden="true"></span><?php endif; ?><?php echo esc_html( $stat['label'] ); ?><?php echo 0 === $ff_si ? '<span aria-hidden="true">*</span>' : ''; ?></span>
 					<span class="stat__value mono"<?php echo preg_match( '/^\d+$/', (string) $stat['value'] ) ? ' data-ff-count="' . esc_attr( $stat['value'] ) . '"' : ''; ?>><?php echo esc_html( $stat['value'] ); ?></span>
 				</li>
 			<?php endforeach; ?>
 		</ul>
+		<?php if ( $t( 'enterprise.stats_note' ) ) : ?><p class="stat-note"><?php echo esc_html( $t( 'enterprise.stats_note' ) ); ?></p><?php endif; ?>
+		</div>
 	</div>
 </section>
 

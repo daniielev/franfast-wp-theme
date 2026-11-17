@@ -14,7 +14,8 @@
     "contact": "contact-us",
     "blog": "our-blog",
     "news": "our-news",
-    "thank_you": "thank-you"
+    "thank_you": "thank-you",
+    "pillars": "our-pillars"
   },
   "common": {
     "on_this_page": "On this page",
@@ -138,7 +139,7 @@
     },
     "add_ons": {
       "title": "Add-ons | FranFast",
-      "description": "Extend FranFast with 24 add-ons, including Claude, Tableau, DocuSign, Stripe, Toast and Zoom, for payments, communications, data, AI and integration."
+      "description": "Extend FranFast with 25 add-ons, including Claude, Tableau, DocuSign, Stripe, Toast and Zoom, for payments, communications, data, AI and integration."
     },
     "reviews": {
       "title": "Customer reviews | FranFast",
@@ -159,6 +160,10 @@
     "thank_you": {
       "title": "Thank you | FranFast",
       "description": "We received your request. A FranFast expert will contact you soon."
+    },
+    "pillars": {
+      "title": "Our pillars | FranFast",
+      "description": "The five FranFast pillars, from franchise development to royalty management, and the tools each one connects to."
     }
   },
   "breadcrumbs": {
@@ -317,28 +322,33 @@
         {
           "icon": "development",
           "title": "Franchise Development",
-          "text": "From first inquiry to signed agreement, with every candidate, territory, FDD and Discovery Day in one pipeline."
+          "text": "From first inquiry to signed agreement, with every candidate, territory, FDD and Discovery Day in one pipeline.",
+          "anchor": "franchise-development"
         },
         {
           "icon": "opening",
           "title": "New Store Opening",
-          "text": "Every opening on one timeline: site, construction, permits, hiring and launch, with owners and dates."
+          "text": "Every opening on one timeline: site, construction, permits, hiring and launch, with owners and dates.",
+          "anchor": "new-store-opening"
         },
         {
           "icon": "operations",
           "title": "Operations and Compliance",
-          "text": "Field visits, brand audits and corrective actions that get closed, across every location."
+          "text": "Field visits, brand audits and corrective actions that get closed, across every location.",
+          "anchor": "operations-compliance"
         },
         {
           "icon": "portal",
           "title": "Franchisee Portal & CRM",
           "text": "One home for franchisees: a searchable Operations Manual, training, support requests and announcements, in their language.",
-          "note": "Options: Franchisee CRM · Learning Management (LMS)"
+          "note": "Options: Franchisee CRM · Learning Management (LMS)",
+          "anchor": "franchisee-portal-crm"
         },
         {
           "icon": "royalty",
           "title": "Royalty Management",
-          "text": "Royalty and ad fund calculations from reported sales, with late payments and anomalies flagged before they cost you."
+          "text": "Royalty and ad fund calculations from reported sales, with late payments and anomalies flagged before they cost you.",
+          "anchor": "royalty-management"
         },
         {
           "icon": "ai",
@@ -346,7 +356,8 @@
           "text": "Agents that work across every module. Use Agentforce, or connect Claude and other models through MCP and CLI.",
           "highlight": true
         }
-      ]
+      ],
+      "see_options": "See options"
     },
     "headless": {
       "eyebrow": "The headless franchise",
@@ -532,7 +543,8 @@
           "value": "8",
           "live": true
         }
-      ]
+      ],
+      "stats_note": "* Example KPIs. Build real-time dashboards and reports with the metrics that matter to your network, and make informed decisions across brands, regions and locations."
     },
     "implementation": {
       "eyebrow": "Implementation",
@@ -642,7 +654,8 @@
       "jitterbit": "A data integration and synchronization platform designed for efficient and secure connection of systems and applications.",
       "geopointe": "A Salesforce mapping and geolocation tool for interactive data visualization and analysis on a map.",
       "conga": "A document management and business process automation platform that enables efficient and productive document generation, signing, and administration.",
-      "formassembly": "The leading platform for personalized forms and secure data gathering."
+      "formassembly": "The leading platform for personalized forms and secure data gathering.",
+      "quickbooks": "Connect QuickBooks to FranFast to sync royalty invoices and payments with your accounting, so your finance team reconciles without re-keying."
     }
   },
   "blog": {
@@ -746,6 +759,37 @@
           "title": "Our Commitment to Excellence",
           "text": "We are passionate about helping businesses thrive in the ever-evolving digital landscape. We believe that innovation and digital transformation are not just buzzwords, but essential strategies for businesses to remain competitive and achieve sustainable growth."
         }
+      ]
+    }
+  },
+  "pillars": {
+    "eyebrow": "Platform",
+    "title": "Our pillars",
+    "lead": "Five modules on one record of your network. Each one works out of the box and connects to the tools your brand already uses.",
+    "toc_label": "Jump to a pillar",
+    "options_label": "Options",
+    "options_note": "Options are optional and may require additional licenses.",
+    "ai_link": "See FranFast AI",
+    "options": {
+      "franchise-development": [
+        "Online franchise application",
+        "Google Ads and social media lead capture",
+        "Background check providers"
+      ],
+      "new-store-opening": [
+        "Project management tools"
+      ],
+      "operations-compliance": [
+        "Events management"
+      ],
+      "franchisee-portal-crm": [
+        "Franchisee CRM",
+        "Learning Management (LMS)"
+      ],
+      "royalty-management": [
+        "QuickBooks",
+        "POS systems (e.g. Toast)",
+        "Stripe payments"
       ]
     }
   }

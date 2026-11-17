@@ -364,6 +364,21 @@ a.lang-switch__item:hover { color: var(--ff-blue); }
 .module__title { font-size: 22px; }
 .module__text { color: var(--ff-ink-2); }
 .module__note { font-size: 14px; color: var(--ff-ink-3); }
+.module__link { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 500; color: var(--ff-blue); text-decoration: none; }
+.module__link:hover { text-decoration: underline; }
+.module__link svg { flex: none; }
+/* Our pillars */
+.pillars-toc { margin-top: 8px; }
+.pillar__inner { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 40px; align-items: start; }
+.pillar__options { background: #fff; border: 1px solid var(--ff-line); border-radius: 16px; padding: 24px; display: grid; gap: 14px; }
+.pillar__options-title { font-size: 14px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--ff-ink-3); }
+.pillar__list { list-style: none; display: grid; gap: 10px; }
+.pillar__list li { display: flex; gap: 10px; align-items: flex-start; color: var(--ff-ink); }
+.pillar__list svg { flex: none; margin-top: 4px; color: var(--ff-blue); }
+.pillar__note { font-size: 13px; color: var(--ff-ink-3); }
+.pillar-ai { max-width: 760px; margin-inline: auto; }
+@media (max-width: 860px) { .pillar__inner { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+.stat-note { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,.72); }
 .module--ai { background: var(--ff-cyan-50); border-color: var(--ff-cyan-200); }
 .module--ai .module__dot { border-color: var(--ff-cyan-50); }
 .module--ai .module__title, .module--ai .module__text { color: var(--ff-teal-900); }

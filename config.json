@@ -91,14 +91,38 @@
     "/author/admin/": "/blog/",
     "/author/admin/page/2/": "/blog/",
     "/news/rogelio-martinez-fast-cloud-ceo-leads-franfasts-success-in-atlantafranfast-shines-at-the-sail-to-success-2024-event-at-walt-disney-worldrogelio-martinez/": "/news/franfast-shines-at-the-sail-to-success-2024-event-at-walt-disney-worldrogelio-martinez/",
-    "/franfast-for-automotive-dealerships/": { "to": "/", "status": 302 },
-    "/franfast-for-health-wellness-and-fitness/": { "to": "/", "status": 302 },
-    "/franfast-for-home-services/": { "to": "/", "status": 302 },
-    "/franfast-for-other-industries/": { "to": "/", "status": 302 },
-    "/franfast-for-professionals-services/": { "to": "/", "status": 302 },
-    "/franfast-for-qsr/": { "to": "/", "status": 302 },
-    "/franfast-for-restaurants/": { "to": "/", "status": 302 },
-    "/franfast-for-senior-care/": { "to": "/", "status": 302 },
+    "/franfast-for-automotive-dealerships/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-health-wellness-and-fitness/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-home-services/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-other-industries/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-professionals-services/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-qsr/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-restaurants/": {
+      "to": "/",
+      "status": 302
+    },
+    "/franfast-for-senior-care/": {
+      "to": "/",
+      "status": 302
+    },
     "/caup/": "/acceptable-use/",
     "/acceptable-use-policy/": "/acceptable-use/",
     "/subprocessor-list/": "/subprocessors/",
@@ -355,6 +379,14 @@
       "img": "/wp-content/uploads/2025/02/Stripe-Partner-Badge-Brand.png",
       "width": 750,
       "height": 130
+    },
+    {
+      "key": "quickbooks",
+      "name": "QuickBooks",
+      "category": "payments",
+      "img": "",
+      "width": 0,
+      "height": 0
     },
     {
       "key": "toast",

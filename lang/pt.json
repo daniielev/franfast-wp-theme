@@ -14,7 +14,8 @@
     "contact": "contato",
     "blog": "blog",
     "news": "noticias",
-    "thank_you": "obrigado"
+    "thank_you": "obrigado",
+    "pillars": "nossos-pilares"
   },
   "common": {
     "on_this_page": "Nesta página",
@@ -138,7 +139,7 @@
     },
     "add_ons": {
       "title": "Complementos | FranFast",
-      "description": "Amplie a FranFast com 24 complementos, como Claude, Tableau, DocuSign, Stripe, Toast e Zoom, para pagamentos, comunicações, dados, IA e integração."
+      "description": "Amplie a FranFast com 25 complementos, como Claude, Tableau, DocuSign, Stripe, Toast e Zoom, para pagamentos, comunicações, dados, IA e integração."
     },
     "reviews": {
       "title": "Avaliações de clientes | FranFast",
@@ -159,6 +160,10 @@
     "thank_you": {
       "title": "Obrigado | FranFast",
       "description": "Recebemos sua solicitação. Um especialista FranFast entrará em contato em breve."
+    },
+    "pillars": {
+      "title": "Nossos pilares | FranFast",
+      "description": "Os cinco pilares da FranFast, da expansão de franquias à gestão de royalties, e as ferramentas às quais cada um se conecta."
     }
   },
   "breadcrumbs": {
@@ -317,28 +322,33 @@
         {
           "icon": "development",
           "title": "Expansão de Franquias",
-          "text": "Do primeiro contato ao contrato assinado, com cada candidato, território, COF e Discovery Day em um só pipeline."
+          "text": "Do primeiro contato ao contrato assinado, com cada candidato, território, COF e Discovery Day em um só pipeline.",
+          "anchor": "franchise-development"
         },
         {
           "icon": "opening",
           "title": "Inauguração de Unidades",
-          "text": "Cada inauguração em uma só linha do tempo: ponto, obra, licenças, contratação e lançamento, com responsáveis e datas."
+          "text": "Cada inauguração em uma só linha do tempo: ponto, obra, licenças, contratação e lançamento, com responsáveis e datas.",
+          "anchor": "new-store-opening"
         },
         {
           "icon": "operations",
           "title": "Operações e Conformidade",
-          "text": "Visitas de campo, auditorias de marca e ações corretivas que são concluídas, em todas as unidades."
+          "text": "Visitas de campo, auditorias de marca e ações corretivas que são concluídas, em todas as unidades.",
+          "anchor": "operations-compliance"
         },
         {
           "icon": "portal",
           "title": "Portal e CRM do Franqueado",
           "text": "Um só lugar para os franqueados: Manual de Operações pesquisável, treinamento, solicitações de suporte e comunicados, no idioma deles.",
-          "note": "Opções: CRM do Franqueado · Gestão de Aprendizagem (LMS)"
+          "note": "Opções: CRM do Franqueado · Gestão de Aprendizagem (LMS)",
+          "anchor": "franchisee-portal-crm"
         },
         {
           "icon": "royalty",
           "title": "Gestão de Royalties",
-          "text": "Cálculo de royalties e fundo de propaganda a partir das vendas informadas, com atrasos e anomalias sinalizados antes de custarem caro."
+          "text": "Cálculo de royalties e fundo de propaganda a partir das vendas informadas, com atrasos e anomalias sinalizados antes de custarem caro.",
+          "anchor": "royalty-management"
         },
         {
           "icon": "ai",
@@ -346,7 +356,8 @@
           "text": "Agentes que trabalham em todos os módulos. Use o Agentforce ou conecte o Claude e outros modelos via MCP e CLI.",
           "highlight": true
         }
-      ]
+      ],
+      "see_options": "Ver opções"
     },
     "headless": {
       "eyebrow": "A franquia headless",
@@ -532,7 +543,8 @@
           "value": "8",
           "live": true
         }
-      ]
+      ],
+      "stats_note": "* KPIs de exemplo. Crie dashboards e relatórios em tempo real com as métricas que importam para sua rede e tome decisões informadas por marca, região e unidade."
     },
     "implementation": {
       "eyebrow": "Implementação",
@@ -685,7 +697,8 @@
       "jitterbit": "Uma plataforma de integração e sincronização de dados criada para conectar sistemas e aplicações de forma eficiente e segura.",
       "geopointe": "Uma ferramenta de mapas e geolocalização para a Salesforce que permite visualizar e analisar dados de forma interativa em um mapa.",
       "conga": "Uma plataforma de gestão de documentos e automação de processos que permite gerar, assinar e administrar documentos de forma eficiente e produtiva.",
-      "formassembly": "A plataforma líder em formulários personalizados e coleta segura de dados."
+      "formassembly": "A plataforma líder em formulários personalizados e coleta segura de dados.",
+      "quickbooks": "Conecte o QuickBooks à FranFast para sincronizar faturas e pagamentos de royalties com sua contabilidade, sem que a equipe financeira precise redigitar dados."
     }
   },
   "contact": {
@@ -746,6 +759,37 @@
           "title": "Nosso compromisso com a excelência",
           "text": "Somos apaixonados por ajudar empresas a prosperar em um cenário digital em constante evolução. Acreditamos que inovação e transformação digital não são apenas palavras da moda, mas estratégias essenciais para que as empresas continuem competitivas e alcancem um crescimento sustentável."
         }
+      ]
+    }
+  },
+  "pillars": {
+    "eyebrow": "Plataforma",
+    "title": "Nossos pilares",
+    "lead": "Cinco módulos sobre um único registro da sua rede. Cada um funciona desde o primeiro dia e se conecta às ferramentas que sua marca já usa.",
+    "toc_label": "Ir para um pilar",
+    "options_label": "Opções",
+    "options_note": "Essas integrações são opcionais e podem exigir licenças adicionais.",
+    "ai_link": "Conheça a FranFast AI",
+    "options": {
+      "franchise-development": [
+        "Formulário de franquia online",
+        "Captação de leads via Google Ads e redes sociais",
+        "Provedores de verificação de antecedentes"
+      ],
+      "new-store-opening": [
+        "Ferramentas de gestão de projetos"
+      ],
+      "operations-compliance": [
+        "Gestão de eventos"
+      ],
+      "franchisee-portal-crm": [
+        "CRM do Franqueado",
+        "Gestão de Aprendizagem (LMS)"
+      ],
+      "royalty-management": [
+        "QuickBooks",
+        "Sistemas de PDV (ex.: Toast)",
+        "Pagamentos com Stripe"
       ]
     }
   }

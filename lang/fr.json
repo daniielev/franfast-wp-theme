@@ -14,7 +14,8 @@
     "contact": "nous-joindre",
     "blog": "blog",
     "news": "nouvelles",
-    "thank_you": "merci"
+    "thank_you": "merci",
+    "pillars": "nos-piliers"
   },
   "common": {
     "on_this_page": "Sur cette page",
@@ -138,7 +139,7 @@
     },
     "add_ons": {
       "title": "Modules complémentaires | FranFast",
-      "description": "Étendez FranFast avec 24 modules complémentaires, dont Claude, Tableau, DocuSign, Stripe, Toast et Zoom, pour les paiements, les communications, les données, l’IA et l’intégration."
+      "description": "Étendez FranFast avec 25 modules complémentaires, dont Claude, Tableau, DocuSign, Stripe, Toast et Zoom, pour les paiements, les communications, les données, l’IA et l’intégration."
     },
     "reviews": {
       "title": "Avis clients | FranFast",
@@ -159,6 +160,10 @@
     "thank_you": {
       "title": "Merci | FranFast",
       "description": "Nous avons reçu votre demande. Un expert FranFast communiquera avec vous sous peu."
+    },
+    "pillars": {
+      "title": "Nos piliers | FranFast",
+      "description": "Les cinq piliers de FranFast, du développement de franchise à la gestion des redevances, et les outils auxquels chacun se connecte."
     }
   },
   "breadcrumbs": {
@@ -317,28 +322,33 @@
         {
           "icon": "development",
           "title": "Développement de franchise",
-          "text": "De la première demande au contrat signé, avec chaque candidat, territoire, FDD et Discovery Day dans un seul pipeline."
+          "text": "De la première demande au contrat signé, avec chaque candidat, territoire, FDD et Discovery Day dans un seul pipeline.",
+          "anchor": "franchise-development"
         },
         {
           "icon": "opening",
           "title": "Ouverture de nouveaux établissements",
-          "text": "Chaque ouverture sur un seul échéancier : site, construction, permis, embauche et lancement, avec responsables et dates."
+          "text": "Chaque ouverture sur un seul échéancier : site, construction, permis, embauche et lancement, avec responsables et dates.",
+          "anchor": "new-store-opening"
         },
         {
           "icon": "operations",
           "title": "Opérations et conformité",
-          "text": "Visites terrain, audits de marque et mesures correctives menées à terme, dans chaque établissement."
+          "text": "Visites terrain, audits de marque et mesures correctives menées à terme, dans chaque établissement.",
+          "anchor": "operations-compliance"
         },
         {
           "icon": "portal",
           "title": "Portail et CRM des franchisés",
           "text": "Un seul endroit pour les franchisés : un manuel d’exploitation consultable, la formation, les demandes de soutien et les annonces, dans leur langue.",
-          "note": "Options : CRM des franchisés · Gestion de l’apprentissage (LMS)"
+          "note": "Options : CRM des franchisés · Gestion de l’apprentissage (LMS)",
+          "anchor": "franchisee-portal-crm"
         },
         {
           "icon": "royalty",
           "title": "Gestion des redevances",
-          "text": "Calcul des redevances et du fonds publicitaire à partir des ventes déclarées, avec retards de paiement et anomalies signalés avant qu’ils vous coûtent."
+          "text": "Calcul des redevances et du fonds publicitaire à partir des ventes déclarées, avec retards de paiement et anomalies signalés avant qu’ils vous coûtent.",
+          "anchor": "royalty-management"
         },
         {
           "icon": "ai",
@@ -346,7 +356,8 @@
           "text": "Des agents qui travaillent dans tous les modules. Utilisez Agentforce, ou connectez Claude et d’autres modèles par MCP et CLI.",
           "highlight": true
         }
-      ]
+      ],
+      "see_options": "Voir les options"
     },
     "headless": {
       "eyebrow": "La franchise headless",
@@ -532,7 +543,8 @@
           "value": "8",
           "live": true
         }
-      ]
+      ],
+      "stats_note": "* Exemples d’indicateurs clés. Créez des tableaux de bord et des rapports en temps réel avec les indicateurs qui comptent pour votre réseau, et prenez des décisions éclairées par marque, région et emplacement."
     },
     "implementation": {
       "eyebrow": "Mise en œuvre",
@@ -642,7 +654,8 @@
       "jitterbit": "Une plateforme d’intégration et de synchronisation des données conçue pour connecter systèmes et applications de façon efficace et sécuritaire.",
       "geopointe": "Un outil de cartographie et de géolocalisation pour Salesforce qui permet de visualiser et d’analyser les données de façon interactive sur une carte.",
       "conga": "Une plateforme de gestion documentaire et d’automatisation des processus qui permet de générer, signer et administrer des documents de façon efficace et productive.",
-      "formassembly": "La plateforme de référence pour des formulaires personnalisés et une collecte de données sécuritaire."
+      "formassembly": "La plateforme de référence pour des formulaires personnalisés et une collecte de données sécuritaire.",
+      "quickbooks": "Connectez QuickBooks à FranFast pour synchroniser les factures et les paiements de redevances avec votre comptabilité, sans ressaisie pour votre équipe des finances."
     }
   },
   "blog": {
@@ -746,6 +759,37 @@
           "title": "Notre engagement envers l’excellence",
           "text": "Nous sommes passionnés par la réussite des entreprises dans un paysage numérique en constante évolution. Nous croyons que l’innovation et la transformation numérique ne sont pas de simples mots à la mode, mais des stratégies essentielles pour rester compétitif et assurer une croissance durable."
         }
+      ]
+    }
+  },
+  "pillars": {
+    "eyebrow": "Plateforme",
+    "title": "Nos piliers",
+    "lead": "Cinq modules sur un seul registre de votre réseau. Chacun fonctionne dès le départ et se connecte aux outils que votre marque utilise déjà.",
+    "toc_label": "Aller à un pilier",
+    "options_label": "Options",
+    "options_note": "Ces intégrations sont facultatives et peuvent nécessiter des licences supplémentaires.",
+    "ai_link": "Découvrir FranFast AI",
+    "options": {
+      "franchise-development": [
+        "Demande de franchise en ligne",
+        "Captation de prospects via Google Ads et les réseaux sociaux",
+        "Fournisseurs de vérification des antécédents"
+      ],
+      "new-store-opening": [
+        "Outils de gestion de projet"
+      ],
+      "operations-compliance": [
+        "Gestion d’événements"
+      ],
+      "franchisee-portal-crm": [
+        "CRM des franchisés",
+        "Gestion de l’apprentissage (LMS)"
+      ],
+      "royalty-management": [
+        "QuickBooks",
+        "Systèmes de point de vente (p. ex. Toast)",
+        "Paiements Stripe"
       ]
     }
   }
