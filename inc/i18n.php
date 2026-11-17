@@ -178,6 +178,9 @@ function ff_url( string $route, ?string $lang = null, string $hash = '' ): strin
  * Route key of the current request (home, about, blog...) or null.
  */
 function ff_current_route(): ?string {
+	if ( is_404() ) {
+		return null; // e.g. /blog/page/99/: 404 title + noindex, no canonical.
+	}
 	if ( is_front_page() ) {
 		return 'home';
 	}
