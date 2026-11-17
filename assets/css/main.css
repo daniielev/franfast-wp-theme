@@ -374,7 +374,11 @@ a.lang-switch__item:hover { color: var(--ff-blue); }
 .pillar__list li { display: flex; gap: 10px; align-items: flex-start; color: var(--ff-ink); }
 .pillar__list svg { flex: none; margin-top: 4px; color: var(--ff-blue); }
 .pillar__note { font-size: 13px; color: var(--ff-ink-3); }
-.pillar-ai { max-width: 760px; margin-inline: auto; }
+.pillar-ai__grid { list-style: none; }
+.pillar-ai__grid li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.pillar-ai__grid .stat { text-decoration: none; min-height: 72px; align-content: center; transition: background .2s ease; }
+.pillar-ai__grid .stat:hover { background: var(--ff-navy-600); }
+.pillar-ai__grid .stat__label { font-size: 15px; font-weight: 500; color: #fff; }
 @media (max-width: 860px) { .pillar__inner { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
 .stat-note { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,.72); }
 .module--ai { background: var(--ff-cyan-50); border-color: var(--ff-cyan-200); }

@@ -3,7 +3,7 @@
  * Our pillars (/our-pillars/, /es/nuestros-pilares/, /pt/nossos-pilares/, /fr/nos-piliers/).
  * One section per core module with the integrations ("Options") it supports; each section is linkable: /our-pillars/#royalty-management.
  * Module title/text/icon: lang/*.json → home.platform.modules (same copy as the Home cards, matched by "anchor").
- * Page copy + options: lang/*.json → pillars. FranFast AI closes the page (no options).
+ * Page copy + options: lang/*.json → pillars. FranFast AI closes the page as a navy band (Network command style): agents across the 5 pillars.
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -60,14 +60,21 @@ $ff_options = (array) ff_t( 'pillars.options' );
 <?php endforeach; ?>
 
 <?php if ( $ff_ai ) : ?>
-	<section class="section">
-		<div class="container">
-			<div class="card module module--ai pillar-ai">
-				<span class="module__icon"><?php echo ff_icon( (string) $ff_ai['icon'], 28 ); // phpcs:ignore ?><span class="module__dot ff-pulse" aria-hidden="true"></span></span>
-				<h2 class="module__title"><?php echo esc_html( $ff_ai['title'] ); ?></h2>
-				<p class="module__text"><?php echo esc_html( $ff_ai['text'] ); ?></p>
-				<p><a class="btn btn--secondary" href="<?php echo esc_url( ff_url( 'home', null, 'franfast-ai' ) ); ?>"><?php ff_e( 'pillars.ai_link' ); ?></a></p>
+	<section class="section section--navy pillar-ai" aria-labelledby="ff-pillar-ai">
+		<div class="container split split--center">
+			<div class="split__main stack-sm">
+				<p class="eyebrow eyebrow--cyan"><?php ff_e( 'home.ai.eyebrow' ); ?></p>
+				<h2 class="h2 h2--sm" id="ff-pillar-ai"><?php ff_e( 'home.ai.title' ); ?></h2>
+				<p class="lead lead--sm"><?php echo esc_html( $ff_ai['text'] ); ?></p>
+				<a class="btn btn--inverse btn--lg" href="<?php echo esc_url( ff_url( 'home', null, 'franfast-ai' ) ); ?>"><?php ff_e( 'pillars.ai_link' ); ?></a>
 			</div>
+			<ul class="split__side stat-grid pillar-ai__grid">
+				<?php foreach ( $ff_modules as $ff_m ) : ?>
+					<li><a class="stat stat--live" href="#<?php echo esc_attr( $ff_m['anchor'] ); ?>">
+						<span class="stat__label"><span class="pulse-dot ff-pulse" aria-hidden="true"></span><?php echo esc_html( $ff_m['title'] ); ?></span>
+					</a></li>
+				<?php endforeach; ?>
+			</ul>
 		</div>
 	</section>
 <?php endif; ?>
