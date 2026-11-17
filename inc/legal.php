@@ -2,7 +2,7 @@
 /**
  * Legal pages support (config.json → legal, legal_redirects).
  *  - Serves downloadable files declared in config.json → legal[].file (e.g. /dpa.pdf → assets/docs/…pdf), versioned in the theme.
- *  - 301 redirects for old legal URLs (config.json → legal_redirects).
+ *  - Redirects for old URLs (config.json → legal_redirects): "/old/": "/new/" = 301, or {"to": "/new/", "status": 302}.
  *  - Heading anchors + table of contents for content pages rendered by page.php.
  */
 
@@ -28,12 +28,15 @@ add_action(
 	static function (): void {
 		$path = ff_request_path();
 
-		// Old URL → new URL (301). Trailing slash optional on the old URL.
-		foreach ( (array) ff_config( 'legal_redirects', array() ) as $from => $to ) {
-			if ( untrailingslashit( $path ) === untrailingslashit( (string) $from ) ) {
-				wp_safe_redirect( home_url( (string) $to ), 301 );
-				exit;
+		// Old URL → new URL. Trailing slash optional on the old URL. String = 301; {to, status} for 302 (temporary).
+		foreach ( (array) ff_config( 'legal_redirects', array() ) as $from => $rule ) {
+			if ( '_readme' === $from || untrailingslashit( $path ) !== untrailingslashit( (string) $from ) ) {
+				continue;
 			}
+			$to     = is_array( $rule ) ? (string) ( $rule['to'] ?? '/' ) : (string) $rule;
+			$status = is_array( $rule ) && 302 === (int) ( $rule['status'] ?? 301 ) ? 302 : 301;
+			wp_safe_redirect( home_url( $to ), $status );
+			exit;
 		}
 
 		// Theme-hosted files (e.g. /dpa.pdf).

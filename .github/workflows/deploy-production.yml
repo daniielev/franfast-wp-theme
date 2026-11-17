@@ -1,0 +1,78 @@
+# Deploy the FranFast theme to PRODUCTION (https://franfast.ai) over SSH (rsync).
+# Manual only: Actions → "Deploy to production" → Run workflow → type franfast.ai to confirm.
+# Never runs on push (push to main = staging). Deploy here only what was already checked on staging.
+# Setup (once): see DEPLOY.md → Production.
+name: Deploy to production
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type franfast.ai to deploy the current main branch to production'
+        required: true
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Confirm target
+        run: |
+          [ "${{ github.event.inputs.confirm }}" = "franfast.ai" ] || { echo "Not confirmed (type franfast.ai)."; exit 1; }
+          [ "${{ github.ref_name }}" = "main" ] || { echo "Deploy to production only from main (got ${{ github.ref_name }})."; exit 1; }
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check the theme files
+        run: |
+          for f in lang/*.json config.json; do python3 -m json.tool "$f" > /dev/null || { echo "Invalid JSON: $f"; exit 1; }; done
+          find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l > /dev/null
+
+      - name: Check the target path
+        env:
+          PROD_PATH: ${{ secrets.PRODUCTION_PATH }}
+          STAGING_PATH: ${{ secrets.STAGING_PATH }}
+        run: |
+          case "$PROD_PATH" in
+            */wp-content/themes/franfast|*/wp-content/themes/franfast/) ;;
+            *) echo "PRODUCTION_PATH must end in /wp-content/themes/franfast (got: '$PROD_PATH')"; exit 1 ;;
+          esac
+          [ "${PROD_PATH%/}" != "${STAGING_PATH%/}" ] || { echo "PRODUCTION_PATH is the same as STAGING_PATH."; exit 1; }
+
+      - name: Set up SSH
+        env:
+          SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY || secrets.STAGING_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.PRODUCTION_SSH_KNOWN_HOSTS || secrets.STAGING_SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          ssh-keygen -y -f ~/.ssh/id_deploy > /dev/null || { echo "SSH key secret is not a valid private key."; exit 1; }
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+
+      - name: Upload theme (rsync)
+        env:
+          HOST: ${{ secrets.PRODUCTION_SSH_HOST || secrets.STAGING_SSH_HOST }}
+          USER: ${{ secrets.PRODUCTION_SSH_USER || secrets.STAGING_SSH_USER }}
+          PORT: ${{ secrets.PRODUCTION_SSH_PORT || secrets.STAGING_SSH_PORT }}
+          PROD_PATH: ${{ secrets.PRODUCTION_PATH }}
+        run: |
+          rsync -az --delete --itemize-changes \
+            --exclude '.git/' --exclude '.github/' --exclude '.gitignore' --exclude 'DEPLOY.md' --exclude '.DS_Store' \
+            -e "ssh -i ~/.ssh/id_deploy -p ${PORT:-22} -o StrictHostKeyChecking=yes" \
+            ./ "$USER@$HOST:${PROD_PATH%/}/"
+
+      - name: Clear page cache (WP Fastest Cache)
+        env:
+          HOST: ${{ secrets.PRODUCTION_SSH_HOST || secrets.STAGING_SSH_HOST }}
+          USER: ${{ secrets.PRODUCTION_SSH_USER || secrets.STAGING_SSH_USER }}
+          PORT: ${{ secrets.PRODUCTION_SSH_PORT || secrets.STAGING_SSH_PORT }}
+          PROD_PATH: ${{ secrets.PRODUCTION_PATH }}
+        run: |
+          WP_ROOT="${PROD_PATH%/wp-content/themes/franfast*}"
+          ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" "$USER@$HOST" \
+            "rm -rf '$WP_ROOT/wp-content/cache/all' '$WP_ROOT/wp-content/cache/wpfc-minified' 2>/dev/null; echo 'Cache cleared'" || echo "Cache not cleared (clear it from WP Fastest Cache)"
