@@ -385,9 +385,9 @@
       "key": "quickbooks",
       "name": "QuickBooks",
       "category": "payments",
-      "img": "",
-      "width": 0,
-      "height": 0
+      "img": "https://fastcloudconsulting.com/assets/quickbooks-logo.png",
+      "width": 250,
+      "height": 72
     },
     {
       "key": "toast",
