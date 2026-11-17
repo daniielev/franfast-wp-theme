@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FF_VERSION', '0.1.0' );
+define( 'FF_VERSION', '0.1.1' );
 define( 'FF_DIR', get_template_directory() );
 define( 'FF_URI', get_template_directory_uri() );
 

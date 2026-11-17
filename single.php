@@ -23,7 +23,7 @@ while ( have_posts() ) :
 					<ol>
 						<li><a href="<?php echo esc_url( ff_home_url() ); ?>"><?php ff_e( 'breadcrumbs.home' ); ?></a></li>
 						<?php if ( $ff_cat ) : ?>
-							<li><a href="<?php echo esc_url( ff_blog_category() === $ff_cat->slug ? ff_url( 'blog' ) : get_term_link( $ff_cat ) ); ?>"><?php echo esc_html( $ff_cat->name ); ?></a></li>
+							<li><a href="<?php echo esc_url( get_term_link( $ff_cat ) ); ?>"><?php echo esc_html( $ff_cat->name ); ?></a></li>
 						<?php else : ?>
 							<li><a href="<?php echo esc_url( ff_url( 'blog' ) ); ?>"><?php ff_e( 'breadcrumbs.blog' ); ?></a></li>
 						<?php endif; ?>

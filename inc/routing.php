@@ -14,6 +14,7 @@ add_filter(
 	'query_vars',
 	static function ( array $vars ): array {
 		$vars[] = 'ff_lang';
+		$vars[] = 'ff_all_posts'; // /blog/: every post in the language (all categories).
 		return $vars;
 	}
 );
@@ -24,6 +25,14 @@ add_filter(
 function ff_register_rewrites(): void {
 	$default   = ff_default_lang();
 	$en_routes = (array) ff_t( 'routes', $default );
+
+	// All posts: /blog/, /es/blog/ (+ /page/N/). Registered first so it wins over the category and page rules.
+	foreach ( ff_languages() as $lang ) {
+		$prefix = $lang === $default ? '' : preg_quote( $lang, '#' ) . '/';
+		$tail   = $lang === $default ? '' : '&ff_lang=' . $lang;
+		add_rewrite_rule( "^{$prefix}blog/page/?([0-9]{1,})/?$", 'index.php?ff_all_posts=1&paged=$matches[1]' . $tail, 'top' );
+		add_rewrite_rule( "^{$prefix}blog/?$", 'index.php?ff_all_posts=1' . $tail, 'top' );
+	}
 
 	foreach ( ff_languages() as $lang ) {
 		if ( $lang === $default ) {
@@ -44,6 +53,9 @@ function ff_register_rewrites(): void {
 
 		// Translated page routes → English WordPress page.
 		foreach ( (array) ff_t( 'routes', $lang ) as $route => $slug ) {
+			if ( 'blog' === $route ) {
+				continue; // /xx/blog/ is the all-posts listing (rule above).
+			}
 			$slug    = trim( (string) $slug, '/' );
 			$en_slug = isset( $en_routes[ $route ] ) ? trim( (string) $en_routes[ $route ], '/' ) : '';
 			if ( '' === $slug || '' === $en_slug ) {
@@ -111,7 +123,7 @@ add_filter(
 add_filter(
 	'redirect_canonical',
 	static function ( $redirect ) {
-		return get_query_var( 'ff_lang' ) ? false : $redirect;
+		return ( get_query_var( 'ff_lang' ) || get_query_var( 'ff_all_posts' ) ) ? false : $redirect;
 	}
 );
 
@@ -131,8 +143,8 @@ add_action(
 			}
 		}
 
-		// The old posts page (/our-blog/, /es/blog/, /pt/blog/) moved to the blog category.
-		if ( is_home() && ! is_front_page() ) {
+		// The old posts page (/our-blog/) → /blog/ (all posts).
+		if ( is_home() && ! is_front_page() && ! get_query_var( 'ff_all_posts' ) ) {
 			$paged = max( 1, (int) get_query_var( 'paged' ) );
 			$url   = ff_url( 'blog', get_query_var( 'ff_lang' ) ?: ff_default_lang() );
 			wp_safe_redirect( $paged > 1 ? $url . 'page/' . $paged . '/' : $url, 301 );

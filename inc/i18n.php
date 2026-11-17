@@ -161,8 +161,8 @@ function ff_home_url( ?string $lang = null ): string {
  */
 function ff_url( string $route, ?string $lang = null, string $hash = '' ): string {
 	$lang = $lang ?? ff_lang();
-	if ( 'blog' === $route ) { // The blog lives in the "blog" category: /category/blog/, /es/category/blog/.
-		$url = ff_home_url( $lang ) . trim( (string) get_option( 'category_base' ) ?: 'category', '/' ) . '/' . ff_blog_category() . '/';
+	if ( 'blog' === $route ) { // All posts: /blog/, /es/blog/. The "Blog" category stays at /category/blog/.
+		$url = ff_home_url( $lang ) . 'blog/';
 		return $hash ? $url . '#' . rawurlencode( $hash ) : $url;
 	}
 	$slug = ff_route_slug( $route, $lang );
@@ -181,7 +181,7 @@ function ff_current_route(): ?string {
 	if ( is_front_page() ) {
 		return 'home';
 	}
-	if ( is_category( ff_blog_category() ) ) {
+	if ( get_query_var( 'ff_all_posts' ) ) {
 		return 'blog';
 	}
 	if ( is_page() ) {

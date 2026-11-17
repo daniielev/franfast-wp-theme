@@ -25,16 +25,16 @@ add_action(
 			public function get_url_list( $page_num, $object_subtype = '' ) {
 				$urls = array();
 				foreach ( ff_languages() as $lang ) {
-					if ( $lang === ff_default_lang() ) {
-						continue;
-					}
 					foreach ( array_keys( (array) ff_t( 'routes', $lang ) ) as $route ) {
+						if ( $lang === ff_default_lang() && 'blog' !== $route ) {
+							continue; // English pages are in the WordPress pages sitemap; /blog/ is not a page.
+						}
 						if ( null === ff_route_slug( $route, $lang ) || in_array( $route, (array) ff_config( 'noindex_routes', array() ), true ) ) {
 							continue;
 						}
 						$page_id = 'home' === $route ? (int) get_option( 'page_on_front' ) : ff_route_page_id( $route );
 						if ( 'blog' === $route ) {
-							$page_id = 0; // Category archive, always listed.
+							$page_id = 0; // All-posts listing (/blog/), always listed.
 						} elseif ( 'home' !== $route && ! $page_id ) {
 							continue; // The English page does not exist yet.
 						}

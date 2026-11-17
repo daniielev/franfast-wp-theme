@@ -5,7 +5,7 @@ Classic theme, no page builder. Site plugins: **WP Fastest Cache**, **Cookiebot*
 ## WordPress settings (once)
 1. **Settings → Permalinks**: Custom structure `/%category%/%postname%/` (same as production: /blog/{slug}/, /news/{slug}/), Category base `category`, Tag base `tag`
    (without the bases WordPress would use `/blog/category/…`; production uses `/category/…`).
-2. **Settings → Reading**: Homepage = page `Home`. The blog home is the category `blog` (`/category/blog/`, `/es/category/blog/`); the old `/our-blog/` page 301-redirects there (config.json → blog_category).
+2. **Settings → Reading**: Homepage = page `Home`. The blog home is `/blog/` (`/es/blog/`, …): all posts in the language, with an "All posts" chip first. Each category keeps its archive (`/category/blog/`, `/category/news/`). The old `/our-blog/` page 301-redirects to `/blog/` (config.json → blog_category).
 3. Pages that must exist in English (slug = file):
    `about-us` → page-about-us.php · `add-ons` → page-add-ons.php · `reviews` → page-reviews.php (Customers) ·
    `contact-us` → page-contact-us.php · `our-news` · legal pages (default `page.php`).

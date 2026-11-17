@@ -1,6 +1,7 @@
 <?php
 /**
- * Blog home (Settings → Reading → Posts page "Our Blog"): /our-blog/, /es/blog/, /pt/blog/.
+ * All posts: /blog/, /es/blog/, /pt/blog/, /fr/blog/ (rewrite ff_all_posts). "All posts" chip active.
+ * The old Posts page /our-blog/ redirects here.
  */
 
 defined( 'ABSPATH' ) || exit;

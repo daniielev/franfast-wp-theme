@@ -1,7 +1,8 @@
 <?php
 /**
  * Shared listing layout: blog home, news, category, tag, search and date archives.
- * Args: eyebrow, title, lead, query (WP_Query|null = main query), empty, filters (bool), active_term (int).
+ * Args: eyebrow, title, lead, query (WP_Query|null = main query), empty, filters (bool),
+ *       active_term (int: 0 = "All posts" active, term_id = that category, -1 = none).
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -24,11 +25,17 @@ $ff_query = $ff_args['query'] instanceof WP_Query ? $ff_args['query'] : $GLOBALS
 <section class="section listing">
 	<div class="container stack-md">
 		<?php if ( $ff_args['filters'] ) : ?>
-			<?php $ff_terms = ff_categories_with_posts( ff_lang() ); ?>
+			<?php
+			$ff_terms = ff_categories_with_posts( ff_lang() );
+			$ff_bc    = get_category_by_slug( ff_blog_category() );
+			if ( $ff_bc && ff_term_has_posts( $ff_bc, ff_lang() ) ) {
+				array_unshift( $ff_terms, $ff_bc ); // "Blog" right after "All posts".
+			}
+			?>
 			<?php if ( count( $ff_terms ) >= 1 ) : ?>
 				<nav class="chips" aria-label="<?php echo ff_attr( 'blog.filter_label' ); ?>">
 					<ul>
-						<li><a class="chip<?php echo $ff_args['active_term'] ? '' : ' is-active'; ?>" href="<?php echo esc_url( ff_url( 'blog' ) ); ?>"<?php echo $ff_args['active_term'] ? '' : ' aria-current="page"'; ?>><?php $ff_bc = get_category_by_slug( ff_blog_category() ); echo esc_html( $ff_bc ? $ff_bc->name : ff_t( 'blog.all' ) ); ?></a></li>
+						<li><a class="chip<?php echo 0 === (int) $ff_args['active_term'] ? ' is-active' : ''; ?>" href="<?php echo esc_url( ff_url( 'blog' ) ); ?>"<?php echo 0 === (int) $ff_args['active_term'] ? ' aria-current="page"' : ''; ?>><?php ff_e( 'blog.all_posts' ); ?></a></li>
 						<?php foreach ( $ff_terms as $ff_term ) : ?>
 							<?php $ff_on = (int) $ff_args['active_term'] === (int) $ff_term->term_id; ?>
 							<li><a class="chip<?php echo $ff_on ? ' is-active' : ''; ?>" href="<?php echo esc_url( get_term_link( $ff_term ) ); ?>"<?php echo $ff_on ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $ff_term->name ); ?></a></li>
