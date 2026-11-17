@@ -175,6 +175,8 @@ a.lang-switch__item:hover { color: var(--ff-blue); }
 .site-footer__grid { display: grid; grid-template-columns: minmax(240px, 1.5fr) repeat(2, minmax(120px, .75fr)) minmax(180px, 1.1fr) minmax(230px, 1.25fr); gap: 40px 32px; padding-block: 64px 48px; }
 .site-footer__logo img { height: 30px; width: auto; }
 .site-footer__tagline { margin-top: 16px; max-width: 320px; line-height: 1.55; }
+.site-footer__mission { margin-top: 8px; max-width: 320px; font-size: 14px; line-height: 1.5; }
+.site-footer__mission span { font-weight: 500; }
 .site-footer__address { display: grid; gap: 10px; margin-top: 20px; }
 .site-footer__line { display: flex; gap: 10px; align-items: flex-start; }
 .site-footer__line svg { flex: none; margin-top: 3px; color: var(--ff-ink-3); }
@@ -721,6 +723,9 @@ article.post { background: var(--ff-gray-50); }
 .about-mission { border-left: 3px solid var(--ff-cyan); padding-left: 20px; display: grid; gap: 6px; }
 .about-mission__label { font-size: 14px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--ff-ink-3); }
 .about-mission__title { font-size: 22px; font-weight: 500; color: var(--ff-blue-900); }
+.home-mission .about-mission { gap: 12px; }
+.home-mission .about-mission__title { font-size: 28px; }
+.home-mission .about-mission p:last-child { margin-top: 8px; }
 .about-video { min-height: 360px; background: linear-gradient(160deg, var(--ff-navy-600), var(--ff-navy)); }
 .about-points { list-style: none; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
 .about-points li { display: flex; gap: 12px; align-items: flex-start; font-size: 18px; font-weight: 500; color: var(--ff-blue-900); }
@@ -746,7 +751,7 @@ article.post { background: var(--ff-gray-50); }
 @media (max-width: 767px) {
   .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 16px; padding-block: 48px 32px; text-align: center; }
   .site-footer__brand { display: grid; justify-items: center; padding-bottom: 28px; border-bottom: 1px solid var(--ff-line); }
-  .site-footer__tagline { margin-inline: auto; }
+  .site-footer__tagline, .site-footer__mission { margin-inline: auto; }
   .site-footer__address { justify-items: center; }
   .site-footer__line { justify-content: center; text-align: left; }
   .site-footer__social { justify-content: center; }
