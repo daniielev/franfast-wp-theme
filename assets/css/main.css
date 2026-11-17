@@ -871,3 +871,15 @@ a[target="_blank"]:not(:has(img, svg))::after {
 
 /* Small note under a page lead (e.g. add-ons licensing) */
 .listing-head__note { margin-top: -6px; font-size: 13px; color: var(--ff-blue-300); }
+
+/* ---- Legal pages (page.php + inc/legal.php) ---- */
+.prose .legal-meta { font-size: 14px; color: var(--ff-ink-3); }
+.prose .legal-lead { font-size: 19px; color: var(--ff-ink); }
+.prose h2[id] { scroll-margin-top: 96px; }
+.legal-toc { margin-bottom: 40px; padding: 20px 24px; background: var(--ff-gray-50); border: 1px solid var(--ff-line); border-radius: var(--ff-radius-md); }
+.legal-toc__title { cursor: pointer; font-weight: 700; color: var(--ff-ink); }
+.legal-toc__list { margin: 12px 0 0; padding: 0; list-style: none; columns: 2 260px; column-gap: 32px; font-size: 15px; }
+.legal-toc__list li { break-inside: avoid; padding: 3px 0; }
+.legal-toc__list a { color: var(--ff-blue); text-decoration: none; }
+.legal-toc__list a:hover, .legal-toc__list a:focus-visible { text-decoration: underline; }
+.site-footer__filetype { font-size: .85em; opacity: .75; }

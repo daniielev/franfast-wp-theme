@@ -17,6 +17,7 @@
     "thank_you": "merci"
   },
   "common": {
+    "on_this_page": "Sur cette page",
     "skip": "Passer au contenu",
     "menu": "Menu",
     "close_menu": "Fermer le menu",
@@ -96,7 +97,7 @@
     "cookies": "Politique relative aux témoins",
     "caup": "Politique d’utilisation acceptable",
     "subprocessor": "Liste des sous-traitants",
-    "dpa": "Entente sur le traitement des données",
+    "dpa": "Addenda sur le traitement des données",
     "refund": "Politique d’annulation et de remboursement"
   },
   "phones": {
@@ -415,8 +416,8 @@
           "text": "Répondez aux questions courantes des franchisés à partir de votre propre base de connaissances, dans leur langue."
         }
       ],
-      "video_title": "Demandez à FranFast",
-      "video_text": "Un chef de l’exploitation demande dans Slack quelles ouvertures sont en retard et quelles redevances sont en souffrance ou inhabituelles. L’agent répond et crée les tâches.",
+      "video_title": "FranFast en quelques minutes",
+      "video_text": "Un aperçu rapide de la plateforme de franchise native IA : développement, ouvertures, exploitation et redevances au même endroit.",
       "video_play": "Lire la vidéo"
     },
     "proof": {

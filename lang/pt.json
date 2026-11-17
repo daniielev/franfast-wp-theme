@@ -17,6 +17,7 @@
     "thank_you": "obrigado"
   },
   "common": {
+    "on_this_page": "Nesta página",
     "skip": "Pular para o conteúdo",
     "menu": "Menu",
     "close_menu": "Fechar menu",
@@ -96,7 +97,7 @@
     "cookies": "Política de cookies",
     "caup": "Política de uso aceitável",
     "subprocessor": "Lista de suboperadores",
-    "dpa": "Acordo de tratamento de dados",
+    "dpa": "Adendo de tratamento de dados",
     "refund": "Política de cancelamento e reembolso"
   },
   "phones": {
@@ -415,8 +416,8 @@
           "text": "Responda às dúvidas rotineiras dos franqueados com a sua própria base de conhecimento, no idioma deles."
         }
       ],
-      "video_title": "Pergunte à FranFast",
-      "video_text": "Um COO pergunta no Slack quais inaugurações estão atrasadas e quais royalties estão em atraso ou incomuns. O agente responde e cria as tarefas.",
+      "video_title": "A FranFast em poucos minutos",
+      "video_text": "Uma visão rápida da plataforma de franquias nativa em IA: expansão, inaugurações, operações e royalties em um só lugar.",
       "video_play": "Reproduzir vídeo"
     },
     "proof": {

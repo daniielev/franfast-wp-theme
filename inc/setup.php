@@ -154,10 +154,14 @@ function ff_icon( string $name, int $size = 20 ): string {
 }
 
 /**
- * Image source from config: full URL or a path inside assets/.
+ * Image source from config: full URL, site path (/wp-content/…) or a path inside assets/.
  */
 function ff_img_src( string $src ): string {
-	return preg_match( '#^https?://#', $src ) ? $src : ff_asset( $src );
+	if ( preg_match( '#^https?://#', $src ) ) {
+		return $src;
+	}
+	// Site path (e.g. /wp-content/uploads/…): follows the current domain (local, staging, .ai).
+	return 0 === strpos( $src, '/' ) ? home_url( $src ) : ff_asset( $src );
 }
 
 /**

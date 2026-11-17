@@ -12,6 +12,7 @@
  *  inc/seo-box.php    native SEO meta box for pages and posts (title, description, og:image, noindex; per language on marketing pages)
  *  inc/content.php    content helpers (legacy page-builder shortcode cleanup)
  *  inc/newsletter.php Pardot Form Handler newsletter (on/off in config.json)
+ *  inc/legal.php      legal pages: theme-hosted downloads (/dpa.pdf), old-URL 301s, heading anchors + TOC
  *
  * Site plugins: WP Fastest Cache, Cookiebot, HFCM (tracking tags), Limit Login Attempts.
  */
@@ -31,3 +32,4 @@ require_once FF_DIR . '/inc/post-lang.php';
 require_once FF_DIR . '/inc/seo-box.php';
 require_once FF_DIR . '/inc/content.php';
 require_once FF_DIR . '/inc/newsletter.php';
+require_once FF_DIR . '/inc/legal.php';

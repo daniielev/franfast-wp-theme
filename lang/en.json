@@ -17,6 +17,7 @@
     "thank_you": "thank-you"
   },
   "common": {
+    "on_this_page": "On this page",
     "skip": "Skip to content",
     "menu": "Menu",
     "close_menu": "Close menu",
@@ -96,7 +97,7 @@
     "cookies": "Cookie Policy",
     "caup": "Customer Acceptable Use Policy",
     "subprocessor": "Subprocessor List",
-    "dpa": "Data Processing Agreement",
+    "dpa": "Data Processing Addendum",
     "refund": "Cancellation and Refund Policy"
   },
   "phones": {
@@ -415,8 +416,8 @@
           "text": "Answer routine franchisee questions from your own knowledge base, in their language."
         }
       ],
-      "video_title": "Ask FranFast",
-      "video_text": "A COO asks in Slack which openings are behind and which royalties are late or unusual. The agent answers and creates the tasks.",
+      "video_title": "FranFast in a few minutes",
+      "video_text": "A quick overview of the AI-native franchise platform: development, openings, operations and royalties in one place.",
       "video_play": "Play video"
     },
     "proof": {

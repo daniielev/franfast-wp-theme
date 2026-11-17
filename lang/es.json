@@ -17,6 +17,7 @@
     "thank_you": "gracias"
   },
   "common": {
+    "on_this_page": "En esta página",
     "skip": "Saltar al contenido",
     "menu": "Menú",
     "close_menu": "Cerrar menú",
@@ -96,7 +97,7 @@
     "cookies": "Política de cookies",
     "caup": "Política de uso aceptable",
     "subprocessor": "Lista de subencargados",
-    "dpa": "Acuerdo de tratamiento de datos",
+    "dpa": "Adenda de tratamiento de datos",
     "refund": "Política de cancelación y reembolso"
   },
   "phones": {
@@ -415,8 +416,8 @@
           "text": "Responde las preguntas frecuentes de los franquiciados con tu propia base de conocimiento, en su idioma."
         }
       ],
-      "video_title": "Pregúntale a FranFast",
-      "video_text": "Un COO pregunta en Slack qué aperturas van atrasadas y qué regalías están atrasadas o son inusuales. El agente responde y crea las tareas.",
+      "video_title": "FranFast en pocos minutos",
+      "video_text": "Un recorrido rápido por la plataforma de franquicias nativa en IA: desarrollo, aperturas, operaciones y regalías en un solo lugar.",
       "video_play": "Reproducir video"
     },
     "proof": {

@@ -51,7 +51,7 @@ $ff_org = (array) ff_config( 'org', array() );
 			<h2 class="site-footer__heading" id="ff-foot-legal"><?php ff_e( 'footer.col_legal' ); ?></h2>
 			<ul>
 				<?php foreach ( (array) ff_config( 'legal', array() ) as $legal ) : ?>
-					<li><a href="<?php echo esc_url( home_url( $legal['path'] ) ); ?>"><?php ff_e( 'legal.' . $legal['key'] ); ?></a></li>
+					<li><a href="<?php echo esc_url( home_url( $legal['path'] ) ); ?>"<?php echo empty( $legal['download'] ) ? '' : ' download type="application/pdf"'; ?>><?php ff_e( 'legal.' . $legal['key'] ); ?><?php echo empty( $legal['download'] ) ? '' : ' <span class="site-footer__filetype">(PDF)</span>'; ?></a></li>
 				<?php endforeach; ?>
 			</ul>
 		</nav>

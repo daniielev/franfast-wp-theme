@@ -7,6 +7,7 @@
 defined( 'ABSPATH' ) || exit;
 get_header();
 $ff_bg = (string) ff_config( 'thank_you.background', '' );
+$ff_bg = $ff_bg ? ff_img_src( $ff_bg ) : '';
 ?>
 <section class="ty-hero"<?php echo $ff_bg ? ' style="--ty-bg:url(\'' . esc_url( $ff_bg ) . '\')"' : ''; ?>>
 	<div class="container ty-hero__inner">
