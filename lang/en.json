@@ -139,7 +139,7 @@
     },
     "add_ons": {
       "title": "Add-ons | FranFast",
-      "description": "Extend FranFast with 25 add-ons, including Claude, Tableau, DocuSign, Stripe, Toast and Zoom, for payments, communications, data, AI and integration."
+      "description": "Extend FranFast with 22 add-ons, including Claude, Tableau, DocuSign, Stripe, Toast and Zoom, for payments, communications, data, AI and integration."
     },
     "reviews": {
       "title": "Customer reviews | FranFast",
@@ -646,11 +646,8 @@
       "chargent": "A platform centralizing customer data within Salesforce and integrating payment processing to maximize revenue and outcomes.",
       "autopilot": "One of the easiest and most intelligent solutions for easily automating your business processes.",
       "tuvis": "A complete solution for reorienting corporate interactions efficiently, compliantly, and securely, offering fully integrated solutions for each industry.",
-      "mirage": "Advanced Computer Telephony Integration (CTI) solutions specifically designed for Salesforce.",
-      "sightcall": "A real-time visual collaboration platform enabling seamless video calls and virtual teamwork for improved interaction and efficient problem resolution.",
       "cirrus-insight": "Enhanced productivity with email and CRM integration, allowing users to effectively manage and synchronize their sales communications and data.",
       "mogli": "Accelerate growth, identify revenue loss, and increase conversion rates—enhance your digital engagement strategy with Mogli Business Messaging.",
-      "workato": "Enterprise integration and automation allowing for fast and simple connection of applications and systems, enhancing workflow productivity.",
       "jitterbit": "A data integration and synchronization platform designed for efficient and secure connection of systems and applications.",
       "geopointe": "A Salesforce mapping and geolocation tool for interactive data visualization and analysis on a map.",
       "conga": "A document management and business process automation platform that enables efficient and productive document generation, signing, and administration.",

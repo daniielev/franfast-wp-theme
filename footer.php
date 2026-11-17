@@ -18,7 +18,6 @@ $ff_org = (array) ff_config( 'org', array() );
 				<img src="<?php echo esc_url( ff_asset( 'img/franfast-logo.svg' ) ); ?>" alt="FranFast" width="99" height="30" loading="lazy">
 			</a>
 			<p class="site-footer__tagline"><?php ff_e( 'footer.tagline' ); ?></p>
-			<p class="site-footer__mission"><span><?php ff_e( 'about.mission.label' ); ?></span> <?php ff_e( 'about.mission.title' ); ?></p>
 			<address class="site-footer__address">
 				<span class="site-footer__line"><?php echo ff_icon( 'pin', 16 ); // phpcs:ignore ?>
 					<span><?php echo esc_html( ( $ff_org['street'] ?? '' ) . ', ' . ( $ff_org['city'] ?? '' ) . ', ' . ( $ff_org['region'] ?? '' ) . ' ' . ( $ff_org['postal_code'] ?? '' ) . ', USA' ); ?></span>

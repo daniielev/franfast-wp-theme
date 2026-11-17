@@ -139,7 +139,7 @@
     },
     "add_ons": {
       "title": "Modules complémentaires | FranFast",
-      "description": "Étendez FranFast avec 25 modules complémentaires, dont Claude, Tableau, DocuSign, Stripe, Toast et Zoom, pour les paiements, les communications, les données, l’IA et l’intégration."
+      "description": "Étendez FranFast avec 22 modules complémentaires, dont Claude, Tableau, DocuSign, Stripe, Toast et Zoom, pour les paiements, les communications, les données, l’IA et l’intégration."
     },
     "reviews": {
       "title": "Avis clients | FranFast",
@@ -646,11 +646,8 @@
       "chargent": "Une plateforme qui centralise les données clients dans Salesforce et intègre le traitement des paiements pour maximiser les revenus et les résultats.",
       "autopilot": "L’une des solutions les plus simples et les plus intelligentes pour automatiser vos processus d’affaires.",
       "tuvis": "Une solution complète pour réorienter les interactions d’entreprise de façon efficace, conforme et sécuritaire, avec des solutions entièrement intégrées pour chaque industrie.",
-      "mirage": "Des solutions avancées d’intégration téléphonie-informatique (CTI) conçues spécialement pour Salesforce.",
-      "sightcall": "Une plateforme de collaboration visuelle en temps réel qui permet des appels vidéo fluides et le travail d’équipe virtuel pour mieux interagir et résoudre les problèmes efficacement.",
       "cirrus-insight": "Plus de productivité grâce à l’intégration du courriel et du CRM, pour gérer et synchroniser efficacement vos communications et vos données de vente.",
       "mogli": "Accélérez la croissance, repérez les pertes de revenus et augmentez vos taux de conversion : renforcez votre stratégie d’engagement numérique avec Mogli Business Messaging.",
-      "workato": "Intégration et automatisation d’entreprise pour connecter rapidement et simplement applications et systèmes, et améliorer la productivité des flux de travail.",
       "jitterbit": "Une plateforme d’intégration et de synchronisation des données conçue pour connecter systèmes et applications de façon efficace et sécuritaire.",
       "geopointe": "Un outil de cartographie et de géolocalisation pour Salesforce qui permet de visualiser et d’analyser les données de façon interactive sur une carte.",
       "conga": "Une plateforme de gestion documentaire et d’automatisation des processus qui permet de générer, signer et administrer des documents de façon efficace et productive.",

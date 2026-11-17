@@ -469,22 +469,6 @@
       "height": 168
     },
     {
-      "key": "mirage",
-      "name": "Mirage",
-      "category": "communications",
-      "img": "/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.04.png",
-      "width": 472,
-      "height": 170
-    },
-    {
-      "key": "sightcall",
-      "name": "SightCall",
-      "category": "communications",
-      "img": "/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.22.png",
-      "width": 530,
-      "height": 178
-    },
-    {
       "key": "cirrus-insight",
       "name": "Cirrus Insight",
       "category": "communications",
@@ -499,14 +483,6 @@
       "img": "/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.32.png",
       "width": 482,
       "height": 232
-    },
-    {
-      "key": "workato",
-      "name": "Workato",
-      "category": "integration",
-      "img": "/wp-content/uploads/2024/12/Screen-Shot-2024-12-23-at-05.43.42.png",
-      "width": 566,
-      "height": 136
     },
     {
       "key": "jitterbit",

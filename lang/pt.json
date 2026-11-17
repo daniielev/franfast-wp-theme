@@ -139,7 +139,7 @@
     },
     "add_ons": {
       "title": "Complementos | FranFast",
-      "description": "Amplie a FranFast com 25 complementos, como Claude, Tableau, DocuSign, Stripe, Toast e Zoom, para pagamentos, comunicações, dados, IA e integração."
+      "description": "Amplie a FranFast com 22 complementos, como Claude, Tableau, DocuSign, Stripe, Toast e Zoom, para pagamentos, comunicações, dados, IA e integração."
     },
     "reviews": {
       "title": "Avaliações de clientes | FranFast",
@@ -689,11 +689,8 @@
       "chargent": "Uma plataforma que centraliza os dados de clientes na Salesforce e integra o processamento de pagamentos para maximizar receita e resultados.",
       "autopilot": "Uma das soluções mais fáceis e inteligentes para automatizar seus processos de negócio.",
       "tuvis": "Uma solução completa para reorientar as interações corporativas de forma eficiente, segura e em conformidade, com soluções totalmente integradas para cada setor.",
-      "mirage": "Soluções avançadas de integração entre telefonia e computador (CTI) desenvolvidas especificamente para a Salesforce.",
-      "sightcall": "Uma plataforma de colaboração visual em tempo real que permite videochamadas fluidas e trabalho em equipe virtual para melhorar a interação e resolver problemas com eficiência.",
       "cirrus-insight": "Mais produtividade com a integração entre e-mail e CRM, para gerenciar e sincronizar suas comunicações e dados de vendas.",
       "mogli": "Acelere o crescimento, identifique perdas de receita e aumente as taxas de conversão: fortaleça sua estratégia de engajamento digital com o Mogli Business Messaging.",
-      "workato": "Integração e automação empresarial para conectar aplicações e sistemas de forma rápida e simples, aumentando a produtividade dos fluxos de trabalho.",
       "jitterbit": "Uma plataforma de integração e sincronização de dados criada para conectar sistemas e aplicações de forma eficiente e segura.",
       "geopointe": "Uma ferramenta de mapas e geolocalização para a Salesforce que permite visualizar e analisar dados de forma interativa em um mapa.",
       "conga": "Uma plataforma de gestão de documentos e automação de processos que permite gerar, assinar e administrar documentos de forma eficiente e produtiva.",

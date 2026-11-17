@@ -310,18 +310,6 @@ $first     = $scenarios[0] ?? array( 'persona' => '', 'prompt' => '', 'steps' =>
 	</div>
 </section>
 
-<!-- Mission (same copy as About) -->
-<section class="section home-mission">
-	<div class="container container--narrow">
-		<div class="about-mission">
-			<p class="about-mission__label"><?php ff_e( 'about.mission.label' ); ?></p>
-			<h2 class="about-mission__title"><?php ff_e( 'about.mission.title' ); ?></h2>
-			<p><?php ff_e( 'about.mission.text' ); ?></p>
-			<p><a class="btn btn--secondary" href="<?php echo esc_url( ff_url( 'about' ) ); ?>"><?php ff_e( 'about.mission.cta' ); ?></a></p>
-		</div>
-	</div>
-</section>
-
 <!-- Demo CTA -->
 <section class="cta-band" id="demo">
 	<div class="container cta-band__inner">
